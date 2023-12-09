@@ -1,0 +1,47 @@
+.msgpage {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.msgpage .msgcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  gap: 30px;
+}
+.msgpage .msgcontent .msgimage image {
+  width: 100%;
+  display: block;
+}
+.msgpage .msgcontent .msg {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+.msgpage .msgcontent .msg h1 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0em;
+}
+.msgpage .msgcontent .msg p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #807D7E;
+}
+.msgpage .msgcontent button {
+  width: 244px;
+  height: 46px;
+  padding: 12px, 48px, 12px, 48px;
+  border-radius: 8px;
+  background-color: #8A33FD;
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=msg.css.map */

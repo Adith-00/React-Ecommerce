@@ -1,0 +1,598 @@
+.ProfileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  min-height: 80vh;
+  padding-bottom: 50px;
+}
+.ProfileInfo .path {
+  display: flex;
+  padding-left: 40px;
+}
+.ProfileInfo .path p {
+  display: flex;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3C4242;
+}
+.ProfileInfo .informationdashbord {
+  display: flex;
+  justify-content: space-between;
+}
+.ProfileInfo .informationdashbord .navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ProfileInfo .informationdashbord .navigation .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ProfileInfo .informationdashbord .navigation .heading .titlesection .title {
+  font-size: 30px;
+}
+.ProfileInfo .informationdashbord .navigation .heading .sub {
+  color: #807D7E;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .navigation .navigationOption {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  justify-content: space-around;
+}
+.ProfileInfo .informationdashbord .navigation .navigationOption .option {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+  padding: 9px 4px 8px 4px;
+}
+.ProfileInfo .informationdashbord .navigation .navigationOption .option i {
+  background-color: blueviolet;
+  width: 0;
+  height: 100%;
+  border-radius: 3px;
+}
+.ProfileInfo .informationdashbord .navigation .navigationOption .option p {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #807D7E;
+}
+.ProfileInfo .informationdashbord .navigation .navigationOption .option:hover {
+  background-color: rgba(128, 125, 126, 0.1647058824);
+}
+.ProfileInfo .informationdashbord .navigation .navigationOption .option:hover i {
+  width: 5px;
+}
+.ProfileInfo .informationdashbord .content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 80%;
+}
+.ProfileInfo .informationdashbord .content .wishlist {
+  display: flex;
+  flex-direction: column;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 40px;
+  width: 100%;
+}
+.ProfileInfo .informationdashbord .content .wishlist .heading {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .msgpage {
+  width: 80%;
+  height: 60vh;
+  border: 1px solid rgba(15, 247, 15, 0.415);
+}
+.ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-bottom: 1px solid rgba(128, 125, 126, 0.368627451);
+}
+.ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .cross {
+  cursor: pointer;
+  align-self: center;
+}
+.ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .image {
+  height: 100px;
+  width: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .image image {
+  width: 100%;
+  display: block;
+}
+.ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .about p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #3C4242;
+}
+.ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .about p span {
+  font-weight: 400;
+}
+.ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .price {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #807D7E;
+}
+.ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .cartbutton {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  width: 143px;
+  height: 45px;
+  padding: 14px, 25px, 14px, 25px;
+  border-radius: 8px;
+  background-color: #8A33FD;
+}
+.ProfileInfo .informationdashbord .content .oderpage {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.ProfileInfo .informationdashbord .content .oderpage .heading {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .OderHeading {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #3C4242;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .OderHeading h1 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #3C4242;
+  padding: 8px;
+  cursor: pointer;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .OderHeading h1:hover {
+  background-color: rgba(128, 125, 126, 0.2078431373);
+  border-radius: 2px;
+  border-bottom: 2px solid rgb(36, 27, 27);
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #807D7E;
+  gap: 10px;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .oderdetails {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(203, 196, 196, 0.605);
+  border-radius: 8px;
+  padding: 20px;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .oderdetails .oderInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .oderdetails .oderInfo h2 {
+  color: #3C4242;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .oderdetails .oderInfo p {
+  color: #807D7E;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .oderdetails .oderInfo p span {
+  font-weight: 400;
+  color: #807D7E;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .oderdetails .paymentinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-self: end;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .oderdetails .paymentinfo p {
+  color: #807D7E;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .oderdetails .paymentinfo p span {
+  font-weight: 400;
+  color: #807D7E;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .productdetails {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .productdetails .product {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .productdetails .product h2 {
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .productdetails .product h2 img {
+  width: 100%;
+  display: block;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .productdetails .product .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .productdetails .product .info p {
+  color: #807D7E;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .productdetails .product .info p span {
+  font-weight: 400;
+  color: #807D7E;
+}
+.ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .productdetails button {
+  cursor: pointer;
+  background-color: #8A33FD;
+  width: 144px;
+  height: 50px;
+  padding: 14px, 28px, 14px, 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+.ProfileInfo .informationdashbord .content .userinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.ProfileInfo .informationdashbord .content .userinfo .heading {
+  color: #3C4242;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .userinfo .contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.ProfileInfo .informationdashbord .content .userinfo .contactDetails .contactheading {
+  color: #3C4242;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .userinfo .contactDetails .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ProfileInfo .informationdashbord .content .userinfo .contactDetails .inputs .label {
+  color: #807D7E;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .userinfo .contactDetails .inputs .inputsection {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+  padding: 5px;
+}
+.ProfileInfo .informationdashbord .content .userinfo .contactDetails .inputs .inputsection input {
+  width: 50%;
+  height: 50px;
+  padding: 5px;
+  color: #3C4242;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .userinfo .contactDetails .inputs .inputsection button {
+  color: #3C4242;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  cursor: pointer;
+}
+.ProfileInfo .informationdashbord .content .userinfo .Shippingaddress {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .heading {
+  color: #3C4242;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .item {
+  width: 400px;
+  background-color: rgba(128, 125, 126, 0.3098039216);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .item .heading {
+  color: #3C4242;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .item .phone,
+.ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .item .address {
+  color: #807D7E;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .item .addresstype {
+  display: flex;
+  gap: 10px;
+}
+.ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .item .addresstype p {
+  padding: 5px;
+  border: 1px solid #3C4242;
+  border-radius: 8px;
+  color: #807D7E;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .item .buttons {
+  display: flex;
+  gap: 10px;
+}
+.ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .item .buttons button {
+  color: #3C4242;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  cursor: pointer;
+}
+.ProfileInfo .informationdashbord .content .addressedit {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.ProfileInfo .informationdashbord .content .addressedit .heading {
+  color: #3C4242;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .addressedit .editSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ProfileInfo .informationdashbord .content .addressedit .editSection .heading {
+  color: #3C4242;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #3C4242;
+}
+.ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs .type1 {
+  width: 500px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #F6F6F6;
+}
+.ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs .type2 {
+  width: 1000px;
+  height: 100px;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #F6F6F6;
+}
+.ProfileInfo .informationdashbord .content .addressedit .chekBoxes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ProfileInfo .informationdashbord .content .addressedit .chekBoxes p {
+  display: flex;
+  gap: 6px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3C4242;
+}
+.ProfileInfo .informationdashbord .content .addressedit .buttons {
+  display: flex;
+  gap: 10px;
+}
+.ProfileInfo .informationdashbord .content .addressedit .buttons button {
+  width: 125px;
+  height: 48px;
+  padding: 12px, 40px, 12px, 40px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+.ProfileInfo .informationdashbord .content .addressedit .buttons .save {
+  background-color: #8A33FD;
+  color: #F6F6F6;
+}
+.ProfileInfo .informationdashbord .content .addressedit .buttons .cancel {
+  background-color: #F6F6F6;
+  color: #807D7E;
+}
+
+@media screen and (max-width: 1280px) {
+  .ProfileInfo .informationdashbord {
+    justify-content: unset;
+    gap: 30px;
+  }
+  .ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs {
+    width: 30%;
+  }
+  .ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs .type1 {
+    width: 100%;
+  }
+  .ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs .type2 {
+    width: 565px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .ProfileInfo .informationdashbord {
+    justify-content: unset;
+    gap: 30px;
+  }
+  .ProfileInfo .informationdashbord .navigation {
+    width: 30%;
+  }
+  .ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs {
+    width: 90%;
+  }
+  .ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs .type1 {
+    width: 100%;
+  }
+  .ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs .type2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 8px;
+  }
+  .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .cartbutton {
+    width: 340px;
+  }
+}/*# sourceMappingURL=profile.css.map */

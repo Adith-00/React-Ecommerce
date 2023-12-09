@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body{
+    font-family: sans-serif ;
+}
+
+
+
+.Sign-IN{
+    width: 100%;
+    height:fit-content;
+    overflow: hidden;
+    position: relative;
+    .Spotlight{
+       height: 100vh;
+       display: flex;
+       width: 100%;
+       flex: 1;
+       .spotImg{
+        height:fit-content;
+        width:50%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            display: block;
+            object-fit:cover;
+        }
+       }
+       .sign_inForm{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 80%;
+        padding: 70px;
+        .sign_in_section{
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+            width: 568px;
+            height: 697px;    
+            .title{
+                font-size: 34px;
+                font-weight: 600;
+                line-height: 33px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                
+            }
+            .section1{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .Google{
+                    width: 567px;
+                    height: 58px;
+                    border-radius: 8px;
+                    border: 1px solid #3C4242;
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 26px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: #8A33FD;
+                    cursor: pointer;
+                    span{
+                     padding: 5px 10px 5px 5px;
+                    }
+
+                }
+                .Twitter{
+                    width: 567px;
+                    height: 58px;  
+                    border-radius: 8px;
+                    border: 1px solid #3C4242;
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 26px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: #8A33FD;
+                    cursor: pointer;
+                    span{
+                     padding: 5px 10px 5px 5px;
+                    }
+                }
+            }
+            .divider {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 16px 0;
+            
+                .divider-line {
+                flex: 1;
+                height: 1px;
+                background-color: #000;
+                }
+            
+                .divider-text {
+                margin: 0 16px;
+                color: #000;
+                }
+            }
+  
+            .section2{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .username-holder{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    .label{
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        color: #3C4242;
+                        
+                    }
+                    .username{
+                        width: 567px;
+                        height: 58px;
+                        border-radius: 8px;
+                        border: 1px solid rgba(0, 0, 0, 0.519);
+                        padding: 10px;
+    
+                    }
+                    .error{
+                        font-size: 12px;
+                        font-weight: 700;
+                        align-self: flex-start;
+                        color: red;
+                    }
+                }
+                .password-holder{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    .label{
+                        padding: 5px;
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        color: #3C4242;
+                        span{
+                            cursor: pointer;
+                        }
+                    }
+                    .password{ 
+                        width: 567px;
+                        height: 58px;
+                        border-radius: 8px;
+                        border: 1px solid rgba(0, 0, 0, 0.519);
+                        padding: 10px;
+    
+                    }  
+                    .sublabel{
+                        align-self: flex-end;
+                        display: flex;
+                        gap: 5px;
+                       flex-direction: column;
+                        .error{
+                            font-size: 12px;
+                            font-weight: 700;
+                            align-self: flex-start;
+                            color: red;
+                        }
+                        .forget_pass{
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            letter-spacing: 0em;
+                            text-align: right;
+                            color: #3C4242;
+                            align-self: flex-end;
+                        }
+                    }
+                    
+                }
+                   
+            }
+            .section3{
+                display: flex;
+                flex-direction: column;
+                 gap: 5px;
+                .sign_in_btn{
+                    width: 167px;
+                    height: 54px;
+                    padding: 16px, 20px, 16px, 20px;
+                    border-radius: 8px;
+                    background: #8A33FD;
+                    color: #F6F6F6;
+                    cursor: pointer;
+                }
+                .signup{
+                    color: #3C4242;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    span{
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                    
+                }
+            }
+        }
+    }
+    }
+   
+}

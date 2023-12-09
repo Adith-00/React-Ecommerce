@@ -1,0 +1,52 @@
+.msgpage{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .msgcontent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        gap: 30px;
+        .msgimage{
+            image{
+                width: 100%;
+                display: block;
+            }
+        }
+        .msg{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+            h1{
+                font-size: 34px;
+                font-weight: 600;
+                line-height: 33px;
+                letter-spacing: 0em;
+            }
+            p{
+                
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+                text-align: center;
+                color: #807D7E;
+
+            }
+        }
+        button{
+            width: 244px;
+            height: 46px;
+            padding: 12px, 48px, 12px, 48px;
+            border-radius: 8px;
+            background-color: #8A33FD;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    
+}

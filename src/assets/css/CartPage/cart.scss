@@ -1,0 +1,288 @@
+.cartpage{
+    display: flex;
+    flex-direction: column;
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding: 40px;
+        gap: 10px;
+        .path{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            color: #807D7E;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+            span{
+                img{
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+        .note{
+           
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #807D7E;
+            span{
+               
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 17px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: #8A33FD;
+                cursor: pointer;
+            }
+            
+        }
+    }
+    .mid{
+        display: flex;
+        flex-direction: column;
+        .heading{
+            display: flex;
+            justify-content: space-around;
+            background-color: #3C4242;
+            padding: 20px;
+            color: white;
+            .product{
+                width: 340px;
+                font-weight: 600;
+                font-size: 16px;
+                text-align: left;
+            }
+            .others{
+                font-weight: 600;
+                font-size: 16px;
+                width: 90px;
+            }
+        }
+        .item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.195) ;
+             padding: 20px;
+             width: 95%;
+             align-self:center ;
+             .product{
+                display: flex;
+                gap: 10px;
+                align-self: flex-start;
+                width: 350px;
+                .details{
+                   display: flex;
+                   gap: 5px;
+                   flex-direction: column;
+                    .name{
+                        font-size: 15px;
+                        font-weight: 700;
+                        line-height: 22px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        color: #717878;
+                    }
+                    .color,.size{
+                        color: #807D7E;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 17px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        
+                    }
+                }
+                
+             }
+             .price,.quantity,.shipping,.total,.delete{
+                width: 100px;
+            }
+            .price,.total{
+                color: #3C4242;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+                letter-spacing: 0em;
+                text-align: left;
+                
+            }
+            .quantity{
+                display: flex;
+                justify-content: space-around;
+                    p{
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 14px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: #3C4242;
+                    }
+                    button{
+                        cursor: pointer;
+                    }
+               
+                padding: 7px;
+                border-radius: 8px;
+                background-color: #F6F6F6;
+                
+            }
+            .shipping{
+                color: #BEBCBD;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                
+            }
+            .delete{
+                cursor: pointer;
+                i{
+                    width: 5px;
+                    height: 5px;
+                }
+                
+            }
+
+          
+        }
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       
+        background-color: #F6F6F6;
+        padding: 30px;
+        .discountSection{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            width: fit-content;
+            .heading{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                .main{
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 29px;
+                    letter-spacing: 0em;
+                    text-align: left; 
+                    color: #3C4242;
+                }
+                .sub{
+                     color: #807D7E;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+            }
+            .couponinput{
+                display: flex;
+                border-radius: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.296);
+                overflow: hidden;
+
+                input{
+                    width: 250px;
+                    height: 43px;
+                    background-color: white;
+                }
+                button{
+                    width: 161px;
+                    height: 43px; 
+                    background-color: #8A33FD;
+                    color: #F6F6F6;
+                    border-radius: 0;
+                    border: 0;
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 19px;
+                    letter-spacing: 0em;  
+                    cursor: pointer;
+                }
+            }
+            button{
+                width: 232px;
+                height: 43px;
+                padding: 12px, 20px, 12px, 20px;
+                border-radius: 8px;
+                border: 1px solid rgba(0, 0, 0, 0.309);
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #3C4242;
+                cursor: pointer;
+            }
+        }
+        .billsection{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            gap: 60px;
+            .bill{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                border-bottom: 1px solid #717878;
+                padding: 20px;
+                .total,.shipping{
+                    display: flex;
+                    gap: 40px;
+                    color: #3C4242;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 26px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    
+                }
+                .Grandtotal{
+                    display: flex;
+                    gap: 20px;
+                    color: #3C4242;
+                    padding-top: 10px;
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 26px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                }
+            }
+            .chekoutbtn{
+                align-self: center;
+                width: 232px;
+                height: 46px;
+                padding: 12px, 20px, 12px, 20px;
+                border-radius: 8px; 
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 22px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #F6F6F6;
+                background-color: #8A33FD;
+                cursor: pointer;
+                
+            }
+        
+        }
+    }
+    
+}

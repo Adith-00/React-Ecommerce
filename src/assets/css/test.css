@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.test {
+  min-width: 100vh;
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    width: 90%;
+  }
+}/*# sourceMappingURL=test.css.map */

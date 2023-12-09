@@ -1,0 +1,164 @@
+footer {
+  background-color: #3C4242;
+  width: 100%;
+  display: flex;
+}
+footer .footercontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 0 0;
+  gap: 30px;
+}
+footer .footercontent .top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+footer .footercontent .top .list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footercontent .top .list h2 {
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 62px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #F6F6F6;
+}
+footer .footercontent .top .list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+footer .footercontent .top .list ul li {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #F6F6F6;
+  cursor: pointer;
+}
+footer .footercontent .mid {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+}
+footer .footercontent .mid .mid-left {
+  display: flex;
+  gap: 10px;
+  align-self: flex-end;
+}
+footer .footercontent .mid .mid-left .logo {
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  height: 39px;
+  width: 39px;
+  cursor: pointer;
+}
+footer .footercontent .mid .mid-left .logo image {
+  width: 100%;
+  display: block;
+}
+footer .footercontent .mid .mid-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footercontent .mid .mid-right h2 {
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 62px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #F6F6F6;
+}
+footer .footercontent .mid .mid-right .downloadstations {
+  display: flex;
+  gap: 20px;
+}
+footer .footercontent .mid .mid-right .downloadstations .downloadstore {
+  display: flex;
+  gap: 10px;
+}
+footer .footercontent .mid .mid-right .downloadstations .downloadstore .logo1 {
+  width: 30px;
+  height: 40px;
+}
+footer .footercontent .mid .mid-right .downloadstations .downloadstore .logo1 image {
+  width: 100%;
+  display: block;
+}
+footer .footercontent .mid .mid-right .downloadstations .downloadstore .text {
+  display: flex;
+  flex-direction: column;
+}
+footer .footercontent .mid .mid-right .downloadstations .downloadstore .text .sub {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+footer .footercontent .mid .mid-right .downloadstations .downloadstore .text .main {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+footer .footercontent .bottom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+footer .footercontent .bottom .bottom-up {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #F6F6F6;
+  border-top: 1px solid #F6F6F6;
+  padding: 30px;
+}
+footer .footercontent .bottom .bottom-up h1 {
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #FFFFFF;
+}
+footer .footercontent .bottom .bottom-up .dropdown {
+  align-self: center;
+  width: 8px;
+  height: 10px;
+}
+footer .footercontent .bottom .bottom-up .dropdown image {
+  width: 100%;
+  display: block;
+}
+footer .footercontent .bottom .bottom-down {
+  align-self: center;
+  justify-self: center;
+  padding: 20px;
+}
+footer .footercontent .bottom .bottom-down p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #F6F6F6;
+}/*# sourceMappingURL=footer.css.map */

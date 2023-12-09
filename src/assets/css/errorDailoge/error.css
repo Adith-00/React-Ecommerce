@@ -1,0 +1,32 @@
+.custom-alert {
+  width: 30%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2dede;
+  color: #a94442;
+  border: 1px solid #ebccd1;
+  border-radius: 4px;
+  position: absolute;
+  top: 3%;
+  right: 1%;
+}
+.custom-alert .error-header {
+  margin-right: 10px;
+}
+.custom-alert .error-content {
+  flex: 1;
+}
+.custom-alert .error-content h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.custom-alert .error-content p {
+  font-weight: 600;
+}
+.custom-alert .close-button {
+  cursor: pointer;
+}/*# sourceMappingURL=error.css.map */

@@ -1,0 +1,201 @@
+head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(0 0 0 / 7%);
+    .logo{
+        width: 100px;
+        height: 70px;
+        padding: 10px;
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    .nav_list{
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            li{
+                color: #807D7E;
+                font-family: Causten;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 26px;
+                letter-spacing: 0em;
+                text-align: left;
+                cursor: pointer;
+            }
+        }
+      
+    }
+    .searchBox{
+        width: 267px;
+        height: 44px;
+        padding: 12px, 20px, 12px, 20px;
+        border-radius: 8px;
+        text-align: center;
+        gap: 12px;
+        background: #F6F6F6;
+
+    }
+    .logos{
+        display: flex;
+        gap: 10px;
+        i{
+            padding: 10px;
+            background: #F6F6F6;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+    .hamburger{
+        display:none;
+        flex-direction: column;
+        width: 10%;
+        height: 100%;
+        p{
+            
+            display: flex;
+            gap: 8px;
+            padding: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #6c6a6f;
+            align-items: center;
+            span{
+                img{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            &:hover{
+                background-color: #807d7e2f;
+                color: #8A33FD;
+                border-radius: 8px;
+            }
+
+        }
+    }
+}
+.head2{
+   
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px 20px 40px;
+        width: 100%;
+        height: 80px;
+        border-bottom: 2px solid rgb(0 0 0 / 7%);
+        .left{
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            align-items: center;
+            gap: 70px;
+            .logo{
+                width: 100px;
+                height: 70px;
+                padding: 10px;
+                img{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .search_box{
+                width: 184px;
+                height: 46px;
+                padding: 12px, 48px, 12px, 48px;
+                border-radius: 8px;
+                text-align: center;
+                background-color: #F6F6F6;
+                gap: 12px;
+                
+            }
+
+        }
+        .right{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 25%;
+            gap: 20px;
+            p{
+                font-size: 18px;
+            }
+            .active{
+                width: 140px;
+                height: 46px;
+                background: #8A33FD;
+                padding: 12px, 48px, 12px, 48px;
+                border-radius: 8px;
+                color: white;
+            }
+            .in_active{
+                width: 140px;
+                height: 46px;
+                background:transparent;
+                color: #8A33FD;
+                padding: 12px, 48px, 12px, 48px;
+                border-radius: 8px;
+                border: 1px solid #3C4242
+            }
+        }
+    
+}
+@media screen and (max-width: 1050px) {
+
+    head{
+        .nav_list{
+            ul{
+                li{
+                    font-size: 18px;
+                }
+            }
+        }
+        .searchBox{
+            width: 150px;
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    head{
+        padding-left: 20px;
+        justify-content: unset;
+        gap: 20px;
+        position: relative;
+
+        .nav_list{
+            display: none;
+
+        }
+        .searchBox{
+            width: 300px;
+        }
+        .logos{
+            display: none;
+        }
+        .hamburger{
+            display: flex;
+            position: absolute;
+            height: fit-content;
+            width: 30%;
+            gap: 10px;
+            padding: 10px;
+            z-index: 1;
+            border-radius: 8px;
+            bottom: -223%;
+            left: 2%;
+            background-color: #F6F6F6;
+            box-shadow: 0 2px 4px 1px gainsboro;
+
+            p{
+                font-size: 20px;
+                &:hover{
+                    background-color: #6c6a6f5b
+                }
+            }
+        }
+    }
+}

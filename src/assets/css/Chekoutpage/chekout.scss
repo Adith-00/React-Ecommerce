@@ -1,0 +1,556 @@
+.chekoutPage {
+    display: flex;
+    gap: 60px;
+
+    .chekoutSession {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0 30px 0;
+        gap: 40px;
+
+        .titleSection {
+            h1 {
+                font-size: 20px;
+            }
+        }
+
+        .billingdetails {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .heading {
+                color: #3C4242;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 34px;
+                letter-spacing: 0.02em;
+                text-align: left;
+            }
+
+            .inputs {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 55px;
+
+                .inputFeilds {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    p {
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 22px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        color: #3C4242;
+                    }
+
+                    .type1 {
+                        width: 500px;
+                        height: 50px;
+                        padding: 8px;
+                        border-radius: 6px;
+                        background-color: #F6F6F6;
+                    }
+
+                    .type2 {
+                        width: 300px;
+                        height: 50px;
+                        padding: 8px;
+                        border-radius: 6px;
+                        background-color: #F6F6F6;
+                    }
+                }
+            }
+
+            button {
+                width: 195px;
+                height: 54px;
+                padding: 16px, 20px, 16px, 20px;
+                border-radius: 8px;
+                background-color: #8A33FD;
+                color: white;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: 0em;
+                text-align: center;
+            }
+
+            .chekbox {
+                display: flex;
+                gap: 5px;
+                color: #3C4242;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0em;
+                text-align: left;
+
+            }
+        }
+
+        .Shippingaddress {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .heading {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .main {
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 34px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    color: #3C4242;
+                }
+
+                .sub {
+                    color: #3C4242;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                }
+            }
+
+            .selector {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                background-color: #F6F6F7;
+                padding: 30px;
+                border-radius: 6px;
+                width: fit-content;
+                min-width: 80%;
+
+                p {
+                    display: flex;
+                    gap: 10px;
+                    padding: 20px;
+                    color: #3C4242;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                }
+
+                .top {
+                    border-bottom: 1px solid black;
+                }
+            }
+
+        }
+
+        .shippingDetails {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h2 {
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 34px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: #3C4242;
+            }
+
+            .details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                background-color: #F6F6F7;
+                padding: 30px;
+                border-radius: 6px;
+                width: fit-content;
+                min-width: 80%;
+                .first {
+                    color: #3C4242;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    padding: 10px;
+                }
+
+                .deliverycharge {
+                    display: flex;
+                    justify-content: space-between;
+                    border-top: 1px solid black;
+                    padding: 10px;
+                    align-items: center;
+
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .main {
+                            color: #3C4242;
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 24px;
+                            letter-spacing: 0em;
+                            text-align: left;
+
+                        }
+
+                        .sub {
+                            color: #3C4242;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                        }
+                    }
+
+                    .price {
+                        color: #3C4242;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        .payment{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .heading{
+                h1{
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 34px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    color: #3C4242;
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 34px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    color: #3C4242;
+                }
+            }
+            .paymentOptions{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                background-color: #F6F6F7;
+                padding: 30px;
+                border-radius: 6px;
+                width: fit-content;
+                min-width: 50%;
+                .creditCard{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    padding: 20px;
+                    .heading{
+                        display: flex;
+                        gap: 10px;
+                        .optionHeading{
+                            .main {
+                                color: #3C4242;
+                                font-size: 20px;
+                                font-weight: 700;
+                                line-height: 24px;
+                                letter-spacing: 0em;
+                                text-align: left;
+    
+                            }
+    
+                            .sub {
+                                color: #3C4242;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 24px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                            } 
+                        }
+                    }
+                    .options{
+                        display: flex;
+                        gap: 30px;
+
+                    }
+                    .cardDetails{
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        input{
+                            width: 40%;
+                            height: 40px;
+                            border-radius: 8px;
+                            background-color: #ffffff;
+                            border: 1px solid rgba(0, 0, 0, 0.386);
+                            padding: 5px;
+                        }
+                    }
+                }
+                .option2{
+                    display: flex;
+                    gap: 10px;
+                    padding: 20px;
+                    border-bottom: 1px solid#3c424293;
+                    border-top:1px solid #3c424293 ;
+                    .optionHeading{
+                        .main {
+                            color: #3C4242;
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 24px;
+                            letter-spacing: 0em;
+                            text-align: left;
+
+                        }
+
+                        .sub {
+                            color: #3C4242;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                        } 
+                    }
+                }
+                .option3{
+                    display: flex;
+                    gap: 10px;
+                    padding: 20px;
+                    p{
+                        color: #3C4242;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        text-align: left;
+
+                    }
+                }
+            }
+        }
+        .paymetButton{
+            width: 108px;
+            height: 54px;
+            padding: 16px, 20px, 16px, 20px;
+            border-radius: 8px;
+            background-color: #8A33FD;
+            color: #F6F6F6;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: center;
+            cursor: pointer;
+            
+        }
+
+    }
+
+    .productSummary {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        box-shadow:0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        background: whitesmoke;
+        height: fit-content;
+        width: 30%;
+        margin-top: 60px;
+
+        h1 {
+            color: #3C4242;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+
+        .oderitems {
+            .item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+
+                .product {
+                    display: flex;
+                    gap: 5px;
+                    padding: 5px;
+
+                    .details {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        p {
+                            font-size: 15px;
+                            font-weight: 700;
+                            line-height: 17px;
+                            letter-spacing: 0.02em;
+                            text-align: left;
+
+                            span {
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 17px;
+                                letter-spacing: 0.02em;
+                                text-align: left;
+                            }
+
+                        }
+                    }
+                }
+
+                .rate {
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 17px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    color: #3C4242;
+
+                }
+
+
+            }
+        }
+
+        .billsummary {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            .primarybill {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 30px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+                justify-content: center;
+
+                p {
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 17px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+
+                    span {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 17px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                    }
+
+                }
+            }
+
+            .shipping {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 17px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                border-bottom: 1px solid #3c424249;
+                padding: 30px;
+                color: #3C4242;
+            }
+
+            .TotalBill {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 17px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                padding: 30px;
+                color: #3C4242;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1280px) {
+    .chekoutPage{
+        .productSummary{
+            width: 40%;
+        }
+    }
+}
+@media screen and (max-width: 1050px) {
+    .chekoutPage{
+        .productSummary{
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 990px) {
+  .chekoutPage{
+    flex-direction: column-reverse;
+    .chekoutSession{
+        width: 100%;
+        .billingdetails{
+            width: 100%;
+            .inputs{
+                gap: 30px;
+                justify-content: center;
+                .inputFeilds{
+                    .type1,.type2{
+                        width: 500px;
+                    }
+                }
+            }
+            
+        }
+        .Shippingaddress{
+            .selector{
+                width: 100%;
+            }
+        }
+        .shippingDetails{
+            .details{
+                width: 100%;
+            }
+        }
+        .payment{
+            .paymentOptions{
+                width: 100%;
+            }
+        }
+       
+    }
+    .productSummary{
+        width: 100%;
+    }
+  }
+
+}

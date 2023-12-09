@@ -1,0 +1,16 @@
+.titlesection {
+  display: flex;
+  gap: 5px;
+}
+.titlesection .emptydiv {
+  background-color: #8A33FD;
+  width: 10px;
+  border-radius: 5px;
+}
+.titlesection .title {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}/*# sourceMappingURL=heading.css.map */

@@ -1,0 +1,477 @@
+.chekoutPage {
+  display: flex;
+  gap: 60px;
+}
+.chekoutPage .chekoutSession {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0 30px 0;
+  gap: 40px;
+}
+.chekoutPage .chekoutSession .titleSection h1 {
+  font-size: 20px;
+}
+.chekoutPage .chekoutSession .billingdetails {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.chekoutPage .chekoutSession .billingdetails .heading {
+  color: #3C4242;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.chekoutPage .chekoutSession .billingdetails .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 55px;
+}
+.chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #3C4242;
+}
+.chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds .type1 {
+  width: 500px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #F6F6F6;
+}
+.chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds .type2 {
+  width: 300px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #F6F6F6;
+}
+.chekoutPage .chekoutSession .billingdetails button {
+  width: 195px;
+  height: 54px;
+  padding: 16px, 20px, 16px, 20px;
+  border-radius: 8px;
+  background-color: #8A33FD;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.chekoutPage .chekoutSession .billingdetails .chekbox {
+  display: flex;
+  gap: 5px;
+  color: #3C4242;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.chekoutPage .chekoutSession .Shippingaddress {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.chekoutPage .chekoutSession .Shippingaddress .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.chekoutPage .chekoutSession .Shippingaddress .heading .main {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #3C4242;
+}
+.chekoutPage .chekoutSession .Shippingaddress .heading .sub {
+  color: #3C4242;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.chekoutPage .chekoutSession .Shippingaddress .selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background-color: #F6F6F7;
+  padding: 30px;
+  border-radius: 6px;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 80%;
+}
+.chekoutPage .chekoutSession .Shippingaddress .selector p {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  color: #3C4242;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.chekoutPage .chekoutSession .Shippingaddress .selector .top {
+  border-bottom: 1px solid black;
+}
+.chekoutPage .chekoutSession .shippingDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.chekoutPage .chekoutSession .shippingDetails h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #3C4242;
+}
+.chekoutPage .chekoutSession .shippingDetails .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background-color: #F6F6F7;
+  padding: 30px;
+  border-radius: 6px;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 80%;
+}
+.chekoutPage .chekoutSession .shippingDetails .details .first {
+  color: #3C4242;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 10px;
+}
+.chekoutPage .chekoutSession .shippingDetails .details .deliverycharge {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  padding: 10px;
+  align-items: center;
+}
+.chekoutPage .chekoutSession .shippingDetails .details .deliverycharge .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.chekoutPage .chekoutSession .shippingDetails .details .deliverycharge .text .main {
+  color: #3C4242;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.chekoutPage .chekoutSession .shippingDetails .details .deliverycharge .text .sub {
+  color: #3C4242;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.chekoutPage .chekoutSession .shippingDetails .details .deliverycharge .price {
+  color: #3C4242;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.chekoutPage .chekoutSession .payment {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.chekoutPage .chekoutSession .payment .heading h1 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #3C4242;
+}
+.chekoutPage .chekoutSession .payment .heading p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #3C4242;
+}
+.chekoutPage .chekoutSession .payment .paymentOptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background-color: #F6F6F7;
+  padding: 30px;
+  border-radius: 6px;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 50%;
+}
+.chekoutPage .chekoutSession .payment .paymentOptions .creditCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+.chekoutPage .chekoutSession .payment .paymentOptions .creditCard .heading {
+  display: flex;
+  gap: 10px;
+}
+.chekoutPage .chekoutSession .payment .paymentOptions .creditCard .heading .optionHeading .main {
+  color: #3C4242;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.chekoutPage .chekoutSession .payment .paymentOptions .creditCard .heading .optionHeading .sub {
+  color: #3C4242;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.chekoutPage .chekoutSession .payment .paymentOptions .creditCard .options {
+  display: flex;
+  gap: 30px;
+}
+.chekoutPage .chekoutSession .payment .paymentOptions .creditCard .cardDetails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.chekoutPage .chekoutSession .payment .paymentOptions .creditCard .cardDetails input {
+  width: 40%;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.386);
+  padding: 5px;
+}
+.chekoutPage .chekoutSession .payment .paymentOptions .option2 {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  border-bottom: 1px solid rgba(60, 66, 66, 0.5764705882);
+  border-top: 1px solid rgba(60, 66, 66, 0.5764705882);
+}
+.chekoutPage .chekoutSession .payment .paymentOptions .option2 .optionHeading .main {
+  color: #3C4242;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.chekoutPage .chekoutSession .payment .paymentOptions .option2 .optionHeading .sub {
+  color: #3C4242;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.chekoutPage .chekoutSession .payment .paymentOptions .option3 {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+.chekoutPage .chekoutSession .payment .paymentOptions .option3 p {
+  color: #3C4242;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.chekoutPage .chekoutSession .paymetButton {
+  width: 108px;
+  height: 54px;
+  padding: 16px, 20px, 16px, 20px;
+  border-radius: 8px;
+  background-color: #8A33FD;
+  color: #F6F6F6;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+.chekoutPage .productSummary {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background: whitesmoke;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 30%;
+  margin-top: 60px;
+}
+.chekoutPage .productSummary h1 {
+  color: #3C4242;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.chekoutPage .productSummary .oderitems .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.chekoutPage .productSummary .oderitems .item .product {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+}
+.chekoutPage .productSummary .oderitems .item .product .details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.chekoutPage .productSummary .oderitems .item .product .details p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.chekoutPage .productSummary .oderitems .item .product .details p span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.chekoutPage .productSummary .oderitems .item .rate {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #3C4242;
+}
+.chekoutPage .productSummary .billsummary {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.chekoutPage .productSummary .billsummary .primarybill {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+  justify-content: center;
+}
+.chekoutPage .productSummary .billsummary .primarybill p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.chekoutPage .productSummary .billsummary .primarybill p span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.chekoutPage .productSummary .billsummary .shipping {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  border-bottom: 1px solid rgba(60, 66, 66, 0.2862745098);
+  padding: 30px;
+  color: #3C4242;
+}
+.chekoutPage .productSummary .billsummary .TotalBill {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  padding: 30px;
+  color: #3C4242;
+}
+
+@media screen and (max-width: 1280px) {
+  .chekoutPage .productSummary {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .chekoutPage .productSummary {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 990px) {
+  .chekoutPage {
+    flex-direction: column-reverse;
+  }
+  .chekoutPage .chekoutSession {
+    width: 100%;
+  }
+  .chekoutPage .chekoutSession .billingdetails {
+    width: 100%;
+  }
+  .chekoutPage .chekoutSession .billingdetails .inputs {
+    gap: 30px;
+    justify-content: center;
+  }
+  .chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds .type1, .chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds .type2 {
+    width: 500px;
+  }
+  .chekoutPage .chekoutSession .Shippingaddress .selector {
+    width: 100%;
+  }
+  .chekoutPage .chekoutSession .shippingDetails .details {
+    width: 100%;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions {
+    width: 100%;
+  }
+  .chekoutPage .productSummary {
+    width: 100%;
+  }
+}/*# sourceMappingURL=chekout.css.map */

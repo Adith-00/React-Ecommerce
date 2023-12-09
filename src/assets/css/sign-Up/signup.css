@@ -1,0 +1,212 @@
+.Sign-up {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+}
+.Sign-up .Spotlight {
+  height: auto;
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+.Sign-up .Spotlight .spotImg {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 33.7%;
+  overflow: hidden;
+}
+.Sign-up .Spotlight .spotImg img {
+  width: 100%;
+  display: block;
+}
+.Sign-up .Spotlight .sign_upForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 80%;
+  padding: 70px;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  width: 568px;
+  height: 697px;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .title {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section1 .Google {
+  width: 567px;
+  height: 58px;
+  border-radius: 8px;
+  border: 1px solid #3C4242;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #8A33FD;
+  cursor: pointer;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section1 .Google span {
+  padding: 5px 10px 5px 5px;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section1 .Twitter {
+  width: 567px;
+  height: 58px;
+  border-radius: 8px;
+  border: 1px solid #3C4242;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #8A33FD;
+  cursor: pointer;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section1 .Twitter span {
+  padding: 5px 10px 5px 5px;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .divider .divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: #000;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .divider .divider-text {
+  margin: 0 16px;
+  color: #000;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section2 .username-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section2 .username-holder .label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #3C4242;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section2 .username-holder .username {
+  width: 567px;
+  height: 58px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.519);
+  padding: 10px;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section2 .username-holder .errorlabel {
+  align-self: flex-start;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: red;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section2 .password-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section2 .password-holder .label {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #3C4242;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section2 .password-holder .label span {
+  cursor: pointer;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section2 .password-holder .password {
+  width: 567px;
+  height: 58px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.519);
+  padding: 10px;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section2 .password-holder .sublabel {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3C4242;
+  align-self: flex-start;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section2 .checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section2 .checkboxes .itm {
+  display: flex;
+  gap: 10px;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section2 .checkboxes .itm p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #807D7E;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section2 .checkboxes .itm span {
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section3 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section3 .sign_up_btn {
+  width: 167px;
+  height: 54px;
+  padding: 16px, 20px, 16px, 20px;
+  border-radius: 8px;
+  background: #8A33FD;
+  color: #F6F6F6;
+  cursor: pointer;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section3 .signup {
+  color: #3C4242;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.Sign-up .Spotlight .sign_upForm .sign_up_section .section3 .signup span {
+  text-decoration: underline;
+  cursor: pointer;
+}/*# sourceMappingURL=signup.css.map */

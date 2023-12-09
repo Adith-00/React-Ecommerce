@@ -1,0 +1,742 @@
+.ProfileInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    min-height: 80vh;
+    padding-bottom: 50px;
+
+    .path {
+        display: flex;
+        padding-left: 40px;
+
+        p {
+            display: flex;
+            gap: 8px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #3C4242;
+        }
+
+    }
+
+    .informationdashbord {
+        display: flex;
+        justify-content: space-between;
+
+        .navigation {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .heading {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .titlesection {
+                    .title {
+                        font-size: 30px
+                    }
+                }
+
+                .sub {
+                    color: #807D7E;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 34px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                }
+            }
+
+            .navigationOption {
+                display: flex;
+                flex-direction: column;
+                gap: 9px;
+                justify-content: space-around;
+
+                .option {
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 10px;
+                    align-items: center;
+                    padding: 9px 4px 8px 4px;
+
+                    i {
+                        background-color: blueviolet;
+                        width: 0;
+                        height: 100%;
+                        border-radius: 3px;
+                    }
+
+                    p {
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 22px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: #807D7E;
+                    }
+
+                    &:hover {
+                        background-color: #807d7e2a;
+
+                        i {
+                            width: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 80%;
+
+            .wishlist {
+                display: flex;
+                flex-direction: column;
+                width: max-content;
+                gap: 40px;
+                width: 100%;
+
+                .heading {
+                    font-size: 28px;
+                    font-weight: 600;
+                    line-height: 34px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+
+                }
+
+                .wishlistcontainer {
+                    width: 100%;
+                    display: flex;
+                    gap: 20px;
+                    flex-direction: column;
+
+                    .msgpage {
+                        width: 80%;
+                        height: 60vh;
+                        border: 1px solid rgba(15, 247, 15, 0.415);
+                    }
+
+                    .wishlistitem {
+                        width: 100%;
+                        display: flex;
+                        gap: 30px;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 5px;
+                        border-bottom: 1px solid #807d7e5e;
+
+                        .cross {
+                            cursor: pointer;
+                            align-self: center;
+                        }
+
+                        .image {
+                            height: 100px;
+                            width: 100px;
+                            border-radius: 8px;
+                            overflow: hidden;
+
+                            image {
+                                width: 100%;
+                                display: block;
+                            }
+                        }
+
+                        .info {
+                            width: 80%;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .about {
+                                p {
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    line-height: 26px;
+                                    letter-spacing: 0.02em;
+                                    text-align: left;
+                                    color: #3C4242;
+
+                                    span {
+                                        font-weight: 400;
+                                    }
+                                }
+                            }
+
+                            .price {
+                                font-size: 18px;
+                                font-weight: 700;
+                                line-height: 26px;
+                                letter-spacing: 0.02em;
+                                text-align: left;
+                                color: #807D7E;
+
+                            }
+
+                            .cartbutton {
+                                font-size: 15px;
+                                font-weight: 500;
+                                line-height: 22px;
+                                letter-spacing: 0em;
+                                text-align: center;
+                                color: white;
+                                width: 143px;
+                                height: 45px;
+                                padding: 14px, 25px, 14px, 25px;
+                                border-radius: 8px;
+                                background-color: #8A33FD;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .oderpage {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                .heading {
+                    font-size: 28px;
+                    font-weight: 600;
+                    line-height: 34px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                }
+
+                .OderLists {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+
+                    .OderHeading {
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid #3C4242;
+
+                        h1 {
+                            font-size: 22px;
+                            font-weight: 600;
+                            line-height: 34px;
+                            letter-spacing: 0.02em;
+                            text-align: left;
+                            color: #3C4242;
+                            padding: 8px;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: #807d7e35;
+                                border-radius: 2px;
+                                border-bottom: 2px solid rgb(36, 27, 27);
+                            }
+                        }
+                    }
+
+                    .oders {
+                        display: flex;
+                        flex-direction: column;
+                        border-bottom: 1px solid #807D7E;
+                        gap: 10px;
+
+                        .oderdetails {
+                            display: flex;
+                            justify-content: space-between;
+                            background-color: rgba(203, 196, 196, 0.605);
+                            border-radius: 8px;
+                            padding: 20px;
+
+                            .oderInfo {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 8px;
+
+                                h2 {
+                                    color: #3C4242;
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    line-height: 24px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+
+                                }
+
+                                p {
+                                    color: #807D7E;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    line-height: 17px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+
+                                    span {
+                                        font-weight: 400;
+                                        color: #807D7E;
+                                    }
+
+                                }
+                            }
+
+                            .paymentinfo {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 8px;
+                                align-self: end;
+
+                                p {
+                                    color: #807D7E;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    line-height: 17px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+
+                                    span {
+                                        font-weight: 400;
+                                        color: #807D7E;
+                                    }
+
+                                }
+                            }
+                        }
+
+                        .productdetails {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 20px;
+                            align-items: center;
+
+                            .product {
+                                align-items: center;
+                                display: flex;
+                                gap: 10px;
+
+                                h2 {
+                                    height: 100px;
+                                    width: 100px;
+                                    overflow: hidden;
+                                    border-radius: 8px;
+
+                                    img {
+                                        width: 100%;
+                                        display: block;
+                                    }
+                                }
+
+                                .info {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 10px;
+
+                                    p {
+                                        color: #807D7E;
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        line-height: 17px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+
+                                        span {
+                                            font-weight: 400;
+                                            color: #807D7E;
+                                        }
+
+                                    }
+                                }
+                            }
+
+                            button {
+                                cursor: pointer;
+                                background-color: #8A33FD;
+                                width: 144px;
+                                height: 50px;
+                                padding: 14px, 28px, 14px, 28px;
+                                border-radius: 8px;
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 22px;
+                                letter-spacing: 0em;
+                                text-align: center;
+                                color: white;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .userinfo {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                .heading {
+                    color: #3C4242;
+                    font-size: 28px;
+                    font-weight: 600;
+                    line-height: 34px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+
+                }
+
+                .contactDetails {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    .contactheading {
+                        color: #3C4242;
+                        font-size: 22px;
+                        font-weight: 600;
+                        line-height: 34px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+
+                    }
+
+                    .inputs {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        .label {
+                            color: #807D7E;
+                            font-size: 15px;
+                            font-weight: 600;
+                            line-height: 22px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                        }
+
+                        .inputsection {
+                            display: flex;
+                            justify-content: space-between;
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+                            padding: 5px;
+
+                            input {
+                                width: 50%;
+                                height: 50px;
+                                padding: 5px;
+                                color: #3C4242;
+                                font-size: 18px;
+                                font-weight: 600;
+                                line-height: 22px;
+                                letter-spacing: 0em;
+                                text-align: left;
+
+                            }
+
+                            button {
+                                color: #3C4242;
+                                font-size: 18px;
+                                font-weight: 600;
+                                line-height: 22px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                .Shippingaddress {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    
+
+                    .heading {
+                        color: #3C4242;
+                        font-size: 28px;
+                        font-weight: 600;
+                        line-height: 34px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                    }
+
+                    .address {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 20px;
+                        justify-content: center;
+
+                        .item {
+                            width: 400px;
+                            background-color: #807d7e4f;
+                            padding: 20px;
+                            border-radius: 8px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+
+                            .heading {
+                                color: #3C4242;
+                                font-size: 20px;
+                                font-weight: 600;
+                                line-height: 24px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                            }
+
+                            .phone,
+                            .address {
+                                color: #807D7E;
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 19px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                            }
+
+                            .addresstype {
+                                display: flex;
+                                gap: 10px;
+
+                                p {
+                                    padding: 5px;
+                                    border: 1px solid #3C4242;
+                                    border-radius: 8px;
+                                    color: #807D7E;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    line-height: 19px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+                                }
+                            }
+
+                            .buttons {
+                                display: flex;
+                                gap: 10px;
+
+                                button {
+                                    color: #3C4242;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 19px;
+                                    letter-spacing: 0em;
+                                    cursor: pointer;
+                                }
+
+
+                            }
+
+                        }
+                    }
+
+                }
+            }
+
+            .addressedit {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                .heading {
+                    color: #3C4242;
+                    font-size: 28px;
+                    font-weight: 600;
+                    line-height: 34px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                }
+
+                .editSection {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .heading {
+                        color: #3C4242;
+                        font-size: 22px;
+                        font-weight: 600;
+                        line-height: 34px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                    }
+
+                    .inputfeild {
+                        display: flex;
+                        gap: 15px;
+                        flex-wrap: wrap;
+
+                        .inputs {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+
+                            p {
+                                font-size: 15px;
+                                font-weight: 600;
+                                line-height: 22px;
+                                letter-spacing: 0.02em;
+                                text-align: left;
+                                color: #3C4242;
+                            }
+
+                            .type1 {
+                                width: 500px;
+                                height: 50px;
+                                padding: 8px;
+                                border-radius: 6px;
+                                background-color: #F6F6F6;
+                            }
+
+                            .type2 {
+                                width: 1000px;
+                                height: 100px;
+                                padding: 8px;
+                                border-radius: 6px;
+                                background-color: #F6F6F6;
+                            }
+                        }
+                    }
+                }
+
+                .chekBoxes {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    p {
+                        display: flex;
+                        gap: 6px;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: #3C4242;
+
+                    }
+                }
+
+                .buttons {
+                    display: flex;
+                    gap: 10px;
+
+                    button {
+                        width: 125px;
+                        height: 48px;
+                        padding: 12px, 40px, 12px, 40px;
+                        border-radius: 8px;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        cursor: pointer;
+
+                    }
+
+                    .save {
+                        background-color: #8A33FD;
+                        color: #F6F6F6;
+                    }
+
+                    .cancel {
+                        background-color: #F6F6F6;
+                        color: #807D7E;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .ProfileInfo{
+        .informationdashbord{
+            justify-content: unset;
+            gap: 30px;
+            .content{
+                .addressedit{
+                    .editSection{
+                        .inputfeild{
+                            .inputs{
+                                width: 30%;
+                                .type1{
+                                    width: 100%;
+                                }
+                                .type2{
+                                    width: 565px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+    
+}
+@media screen and (max-width: 1050px) {
+    .ProfileInfo{
+        .informationdashbord{
+            justify-content: unset;
+            gap: 30px;
+            .navigation{
+                width: 30%;
+            }
+            .content{
+                .addressedit{
+                    .editSection{
+                        .inputfeild{
+                            .inputs{
+                                width: 90%;
+                                .type1{
+                                    width: 100%;
+                                }
+                                .type2{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+    
+}
+@media screen and (max-width: 770px) {
+    .ProfileInfo{
+        .informationdashbord{
+            .content{
+                .wishlist{
+                    .wishlistcontainer{
+                        .wishlistitem{
+                            .info{
+                                flex-wrap: wrap;
+                                justify-content: space-around;
+                                gap: 8px;
+                                .cartbutton{
+                                    width: 340px;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

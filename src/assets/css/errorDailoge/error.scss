@@ -1,0 +1,36 @@
+.custom-alert {
+    width: 30%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    position: absolute;
+    top: 3%;
+    right: 1%;
+  
+    .error-header {
+      margin-right: 10px;
+    }
+  
+    .error-content {
+      flex: 1;
+      h2{
+        font-size: 18px;
+        font-weight: 700;
+      }
+      p{
+        font-weight: 600;
+      }
+    }
+  
+    .close-button {
+      cursor: pointer;
+    }
+  }
+  
