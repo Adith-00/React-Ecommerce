@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useContext, useEffect, useState}from "react";
 import CategoryCard from "../../categoryCard";
 import Button from "../../button";
 import "../../../assets/css/ProductDetail/productdeatil.css";
@@ -14,15 +14,25 @@ import {
   cart,
   smallProductImage,
   vedioimage,
+  whitecart,
 } from "../../../assets/images/images";
+import { DataContext } from "../../../router/router";
 
 const ProductDetailpage = () => {
+   const [items,setItem]=useState()
   const service = [
     "Secure Payment",
     "SizeandPayment",
     "Freeshipping",
     "Free Shipping And Returns",
   ];
+  const{productId,data}=useContext(DataContext);
+  useEffect(()=> {productId&& data?.map((item)=>{
+    return  productId===item?.id ? (setItem(item)):null
+  })},[productId])
+ 
+  console.log("><><><>>M",items)
+   
   return (
     <div className="Productdetailpage">
       <div className="oderingSection wrapper">
@@ -48,7 +58,7 @@ const ProductDetailpage = () => {
               Top
             </p>
           </div>
-          <h1>Raven Hoodie With Black colored Design </h1>
+          <h1>{items&& items.itemName}</h1>
           <div className="rating">
             <div className="stars">
               <img src={rating} alt="rating" />
@@ -64,25 +74,30 @@ const ProductDetailpage = () => {
             <div className="heading">
               <p className="main">Select size</p>
               <p className="sub">
-                Size Guide{" "}
+                Size Guide
                 <i>
                   <img src={nextArrow} alt="arrow" />
                 </i>
               </p>
             </div>
             <div className="sizetile">
-              <Button buttontxt="xl" />
+              {items&&items.size.map((item)=>{
+                return<Button buttontxt={item} />
+              })}
             </div>
           </div>
           <div className="colorSelector">
             <p className="heading">Colours Available</p>
             <div className="colortile">
-              <i></i>
+              {items&&items.colors.map((item)=>{
+                return <i style={{ backgroundColor: item }}></i>
+              })}
+              
             </div>
           </div>
           <div className="cartOptions">
-            <Button buttontxt="Add to cart" image={cart} />
-            <p className="price">$123</p>
+            <Button buttontxt="Add to cart" image={whitecart} />
+            <p className="price">{items&&items.itemPrice}</p>
           </div>
           <div className="services">
             {service.map((item, index) => {
@@ -103,14 +118,11 @@ const ProductDetailpage = () => {
         <div className="details">
           <div className="description">
             <div className="heading">
-              <p>Description</p> <p> User comments </p> <p>Question & Answer</p>{" "}
+              <p>Description</p> <p> User comments </p> <p>Question & Answer</p>
             </div>
             <div className="info">
               <p>
-                100% Bio-washed Cotton – makes the fabric extra soft & silky.
-                Flexible ribbed crew neck. Precisely stitched with no pilling &
-                no fading. Provide all-time comfort. Anytime, anywhere. Infinite
-                range of matte-finish HD prints.
+               {items&&items.description}
               </p>
             </div>
             <div className="grid">
@@ -140,12 +152,20 @@ const ProductDetailpage = () => {
               </div>
             </div>
           </div>
-          {/* <div className="video"><img src={vedioimage} alt="video" /></div> */}
+          <div className="video"><img src={vedioimage} alt="video" /></div>
         </div>
       </div>
       <div className="Products wrapper">
         <Heading headingTxt="Similar products" />
-        <CategoryCard image={womencat3} />
+        <div className="cards">
+        {data &&
+              data.map((item, index) => {
+                const {  itemPrice,itemName } = item;
+                return index <6 ? (
+                  <CategoryCard itemname={itemName} price={itemPrice} image={womencat3} path={"/details"} />
+                ) : null;
+              })}
+        </div>
       </div>
     </div>
   );

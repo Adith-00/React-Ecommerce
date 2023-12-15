@@ -1,8 +1,9 @@
 import React from "react";
 import InputBox from "../../input";
 import Button from "../../button";
-import { cartimg, deleteIcon, nxtarrow } from "../../../assets/images/images";
+import { EmptyCart, cartimg, deleteIcon, nxtarrow } from "../../../assets/images/images";
 import "../../../assets/css/CartPage/cart.css"
+import MsgPage from "../MsgPage/msgContainer";
 
 const CartPage =()=>{
  return (
@@ -60,6 +61,7 @@ const CartPage =()=>{
                     <Button style="chekoutbtn" buttontxt="Continue Chekout"/>
             </div>
         </div>
+        {/* <MsgPage msgimg={EmptyCart} msg={"Your cart is empty and sad :("} submsg={"Add something to make it happy!"} buttontext={"Continue Shopping "}/> */}
     </div>
  )
 

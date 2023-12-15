@@ -100,6 +100,14 @@
   gap: 10px;
 }
 .productListpage .product .filtersection .pricesection .pricefilter .priceindicator .indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3C4242;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
   width: 97px;
   height: 32px;
   border: 1px solid rgba(138, 137, 137, 0.3568627451);
@@ -129,6 +137,7 @@
   flex-wrap: wrap;
   padding: 35px;
   gap: 20px;
+  justify-content: center;
 }
 .productListpage .product .filtersection .colorselector .colortiles .tile {
   display: flex;
@@ -179,6 +188,7 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 35px;
+  justify-content: center;
 }
 .productListpage .product .filtersection .szieselector .sizetile button {
   text-align: center;

@@ -75,11 +75,15 @@ import visalogo from "./Frame 441.png"
 import paypal from "./Frame 442.png"
 import paypass from "./Frame 443.png"
 import vedioimage from "./Frame 47.png"
+import whitecart from "./whitecart.png"
+import EmptyCart from "./emptyCart.png"
 export {
     Hero,
     user,
     shipping,
+    whitecart,
     gpaylogo,
+    EmptyCart,
     visalogo,
     paypal,
     paypass,

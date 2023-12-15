@@ -50,12 +50,18 @@
   border-radius: 6px;
   background-color: #F6F6F6;
 }
+.chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds .type1:hover {
+  border: 1.5px solid blueviolet;
+}
 .chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds .type2 {
   width: 300px;
   height: 50px;
   padding: 8px;
   border-radius: 6px;
   background-color: #F6F6F6;
+}
+.chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds .type2:hover {
+  border: 1.5px solid blueviolet;
 }
 .chekoutPage .chekoutSession .billingdetails button {
   width: 195px;

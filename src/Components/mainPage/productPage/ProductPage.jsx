@@ -25,9 +25,9 @@ const ProductListPage = () => {
           <div className="cards">
             {data &&
               data.map((item, index) => {
-                const { category, itemPrice } = item;
-                return index < 9 ? (
-                  <CategoryCard itemname={category} price={itemPrice} image={womencat1} path={"/productdetail"} />
+                const {  itemPrice,id,itemName } = item;
+                return index < 12 ? (
+                  <CategoryCard itemname={itemName} price={itemPrice} image={womencat1} path={"/productdetail"} id={id} />
                 ) : null;
               })}
           </div>

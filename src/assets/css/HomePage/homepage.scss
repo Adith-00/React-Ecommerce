@@ -165,6 +165,8 @@
             .cards{
                 display: flex;
                 gap: 20px;
+                overflow: scroll;
+                width: 90%;
                 .new-arrival-card{
                     display: flex;
                     flex-direction: column;

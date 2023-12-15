@@ -19,13 +19,15 @@ head{
             gap: 40px;
             li{
                 color: #807D7E;
-                font-family: Causten;
                 font-size: 22px;
                 font-weight: 600;
                 line-height: 26px;
                 letter-spacing: 0em;
                 text-align: left;
                 cursor: pointer;
+                &:hover{
+                    color: #8A33FD;
+                }
             }
         }
       
@@ -48,6 +50,10 @@ head{
             background: #F6F6F6;
             border-radius: 8px;
             cursor: pointer;
+           &:hover{
+            background-color: #8b33fd4c;
+            
+           }
         }
     }
     .hamburger{

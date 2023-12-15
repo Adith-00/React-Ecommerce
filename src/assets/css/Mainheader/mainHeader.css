@@ -20,13 +20,15 @@ head .nav_list ul {
 }
 head .nav_list ul li {
   color: #807D7E;
-  font-family: Causten;
   font-size: 22px;
   font-weight: 600;
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
   cursor: pointer;
+}
+head .nav_list ul li:hover {
+  color: #8A33FD;
 }
 head .searchBox {
   width: 267px;
@@ -46,6 +48,9 @@ head .logos i {
   background: #F6F6F6;
   border-radius: 8px;
   cursor: pointer;
+}
+head .logos i:hover {
+  background-color: rgba(139, 51, 253, 0.2980392157);
 }
 head .hamburger {
   display: none;

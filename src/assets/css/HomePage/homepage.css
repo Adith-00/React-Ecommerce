@@ -163,6 +163,8 @@
 .homepage .newarrival .cardsection .cards {
   display: flex;
   gap: 20px;
+  overflow: scroll;
+  width: 90%;
 }
 .homepage .newarrival .cardsection .cards .new-arrival-card {
   display: flex;

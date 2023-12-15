@@ -41,12 +41,11 @@ const HomePage = () => {
       <div className="newarrival wrapper">
         <Heading headingTxt="New Arrival" />
         <div className="cardsection">
-          <Button image={image.PreviousArrow} />
           <div className="cards">
             {data &&
               data?.map((item, index) => {
                 const { id, category } = item;
-                return index < 4 ? (
+                return index < 6 ? (
                   <NewArrivalCard
                     key={id}
                     itemName={category}
@@ -55,7 +54,6 @@ const HomePage = () => {
                 ) : null;
               })}
           </div>
-          <Button image={image.nextArrow} />
         </div>
       </div>
       <div className="savingzone wrapper">
@@ -114,7 +112,7 @@ const HomePage = () => {
             data?.map((item, index) => {
               const { id, category } = item;
               return (
-                index < 8 && (
+                index < 10 && (
                   <CategoryCard
                     key={id}
                     itemname={category}
@@ -132,7 +130,7 @@ const HomePage = () => {
             data?.map((item, index) => {
               const { id, category } = item;
               return (
-                index < 4 && (
+                index < 5 && (
                   <CategoryCard
                     key={id}
                     itemname={category}
@@ -169,7 +167,7 @@ const HomePage = () => {
             data?.map((item, index) => {
               const { id, category, itemPrice } = item;
               return (
-                index < 4 && (
+                index < 5 && (
                   <CategoryCard
                     key={id}
                     itemname={category}

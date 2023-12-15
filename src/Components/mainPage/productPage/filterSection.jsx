@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../../button";
 import InputBox from "../../input";
 import { nxtarrow, filterIcon, slider } from "../../../assets/images/images";
 import { Items, Styles, colors, size } from "../../../assets/const/consts";
 const FilterSection = () => {
+  const [min,setMin]=useState('')
+  const [max,setMax]=useState('')
+  const minValue =(e)=>{
+    setMin(e.target.value)
+  }
+  const maxvalue=(e)=>{
+    setMax(e.target.value)
+  }
   return (
     <div className="filtersection">
       <div className="head">
@@ -35,13 +43,13 @@ const FilterSection = () => {
         </div>
         <div className="pricefilter">
           <div className="slider">
-              <InputBox type={"range"} min={"0"} max={"100"} style={"minslider"}/>
-              <InputBox type={"range"} min={"0"} max={"100"} style={"maxslider"}/>
+              <InputBox type={"range"} min={"0"} max={"100"} style={"minslider"}onChange={minValue}/>
+              <InputBox type={"range"} min={"0"} max={"100"} style={"maxslider"} onChange={maxvalue}/>
           </div>
         
           <div className="priceindicator">
-            <p className="indicator"></p>
-            <p className="indicator"></p>
+            <p className="indicator">${min? min:0}</p>
+            <p className="indicator">${max? max:0}</p>
           </div>
         </div>
       </div>
