@@ -7,17 +7,18 @@
 }
 .ProfileInfo .path {
   display: flex;
-  padding-left: 40px;
+  padding-top: 30px;
+  align-items: center;
 }
 .ProfileInfo .path p {
   display: flex;
   gap: 8px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 700;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  color: #3C4242;
+  color: rgba(60, 66, 66, 0.6274509804);
 }
 .ProfileInfo .informationdashbord {
   display: flex;
@@ -567,6 +568,9 @@
   .ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs .type2 {
     width: 565px;
   }
+  .ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address {
+    gap: 7px;
+  }
 }
 @media screen and (max-width: 1050px) {
   .ProfileInfo .informationdashbord {
@@ -585,8 +589,18 @@
   .ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs .type2 {
     width: 100%;
   }
+  .ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .oderdetails {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .oderdetails .paymentinfo {
+    align-self: flex-start;
+  }
+  .ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .productdetails button {
+    width: 100px;
+  }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 980px) {
   .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info {
     flex-wrap: wrap;
     justify-content: space-around;

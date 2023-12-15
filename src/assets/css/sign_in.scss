@@ -41,6 +41,7 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+        align-self: center;
         width: 50%;
         height: 80%;
         padding: 70px;
@@ -228,4 +229,50 @@ body{
     }
     }
    
+}
+@media screen and (max-width: 1150px){
+
+    .Sign-IN{
+        
+        .Spotlight{
+            height: fit-content;
+            .spotImg{
+                 width: 50%;
+                 height:100%;
+                 margin: 0 auto;
+                 img{
+                    width: 100%; 
+                    display: block;
+                    object-fit: cover;
+                 }
+            }
+            .sign_inForm{
+                padding: 40px;
+                .sign_in_section{
+                    width: 470px;
+                    gap:10px;
+                    height: fit-content;
+
+                    .section1{
+                        .Google,.Twitter{
+                            width: 100%;
+                        }
+                    }
+                    .section2{
+                        .username-holder{
+                            .username{
+                                width: 100%;
+                            }
+                        }
+                        .password-holder{
+                            .password{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

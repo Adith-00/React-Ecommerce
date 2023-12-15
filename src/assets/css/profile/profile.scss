@@ -7,17 +7,17 @@
 
     .path {
         display: flex;
-        padding-left: 40px;
-
+        padding-top: 30px;
+        align-items: center;
         p {
             display: flex;
             gap: 8px;
-            font-size: 18px;
-            font-weight: 500;
+            font-size: 16px;
+            font-weight: 700;
             line-height: 22px;
             letter-spacing: 0em;
             text-align: left;
-            color: #3C4242;
+            color: #3c4242a0;
         }
 
     }
@@ -681,6 +681,13 @@
                         }
                     }
                 }
+                .userinfo{
+                    .Shippingaddress{
+                        .address{
+                            gap: 7px;
+                        }
+                    }
+                }
             }
            
         }
@@ -711,13 +718,31 @@
                         }
                     }
                 }
+                .oderpage{
+                    .OderLists{
+                        .oders{
+                            .oderdetails{
+                                flex-direction: column;
+                                gap: 20px;
+                                .paymentinfo{
+                                    align-self: flex-start;
+                                }
+                            }
+                            .productdetails{
+                                button{
+                                    width: 100px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
            
         }
     }
     
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 980px) {
     .ProfileInfo{
         .informationdashbord{
             .content{

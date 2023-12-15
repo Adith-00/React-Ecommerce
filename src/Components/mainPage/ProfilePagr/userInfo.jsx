@@ -38,6 +38,7 @@ const UserInfo=()=>{
                     </div>
                     </div>
                     
+                    
                 </div>
             </div>
         </div>

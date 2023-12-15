@@ -4,13 +4,15 @@ import "../../../assets/css/profile/profile.css"
 import { nxtarrow, profileIcon1, profileIcon2, profileIcon3, profileIcon4 } from "../../../assets/images/images";
 import Wishlist from "./whishlist";
 import AddressEdit from "./addressEditpage";
+import UserInfo from "./userInfo";
+import OderPage from "./Oderpage";
 import { ProfileNavigation } from "../../../assets/const/consts";
 
 
 const Profile = ()=>{
     return(
         <div className="ProfileInfo">
-            <div className="path">
+            <div className="path wrapper">
                 <p>Home <span><img src={nxtarrow} alt="path" /></span>My Account <span><img src={nxtarrow} alt="path" /></span>PersonalInfo</p>
             </div>
             <div className="informationdashbord wrapper">
@@ -37,9 +39,9 @@ const Profile = ()=>{
                 </div>
                 <div className="content">
                     {/* <UserInfo/> */}
-                    <AddressEdit/>
+                    {/* <AddressEdit/> */}
                    {/* <Wishlist/> */}
-                   {/* <OderPage/> */}
+                   <OderPage/>
                 </div>
             </div>
         </div>

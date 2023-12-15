@@ -19,13 +19,16 @@
 }
 body{
     font-family: sans-serif ;
+	
+	
 }
 .wrapper {
 	width: 90%;
 	margin: 0 auto;
 }
 .test {
-	min-width: 100vh;
+	min-height: 100vh;
+	overflow-x: hidden;
 }
 @media screen and (max-width: 1280px) {
 	.wrapper{

@@ -28,7 +28,8 @@
 .chekoutPage .chekoutSession .billingdetails .inputs {
   display: flex;
   flex-wrap: wrap;
-  gap: 55px;
+  gap: 40px;
+  max-width: 700px;
 }
 .chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds {
   display: flex;
@@ -465,8 +466,11 @@
     gap: 30px;
     justify-content: center;
   }
+  .chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds {
+    width: 85%;
+  }
   .chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds .type1, .chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds .type2 {
-    width: 500px;
+    width: 100%;
   }
   .chekoutPage .chekoutSession .Shippingaddress .selector {
     width: 100%;

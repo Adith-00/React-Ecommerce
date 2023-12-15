@@ -161,4 +161,61 @@ footer .footercontent .bottom .bottom-down p {
   letter-spacing: 0em;
   text-align: left;
   color: #F6F6F6;
+}
+
+@media screen and (max-width: 640px) {
+  footer .footercontent .top {
+    gap: 20px;
+  }
+  footer .footercontent .top .list h2 {
+    font-size: 18px;
+    line-height: normal;
+  }
+  footer .footercontent .top .list ul {
+    gap: 8px;
+  }
+  footer .footercontent .top .list ul li {
+    font-size: 12px;
+    line-height: normal;
+  }
+  footer .footercontent .mid {
+    flex-direction: column-reverse;
+    gap: 10px;
+    padding: 0px;
+  }
+  footer .footercontent .mid .mid-left .logo {
+    height: 25px;
+    width: 25px;
+    padding: 6px;
+  }
+  footer .footercontent .mid .mid-right h2 {
+    font-size: 15px;
+    line-height: normal;
+  }
+  footer .footercontent .mid .mid-right .downloadstations .downloadstore {
+    gap: 10px;
+  }
+  footer .footercontent .mid .mid-right .downloadstations .downloadstore .logo {
+    width: 25px;
+    height: 30px;
+  }
+  footer .footercontent .mid .mid-right .downloadstations .downloadstore .text .sub {
+    font-size: 10px;
+    line-height: normal;
+  }
+  footer .footercontent .mid .mid-right .downloadstations .downloadstore .text .main {
+    font-size: 11px;
+    line-height: normal;
+  }
+  footer .footercontent .bottom .bottom-up {
+    padding: 10px;
+  }
+  footer .footercontent .bottom .bottom-up h1 {
+    font-size: 17px;
+    letter-spacing: normal;
+  }
+  footer .footercontent .bottom .bottom-down p {
+    font-size: 8px;
+    line-height: normal;
+  }
 }/*# sourceMappingURL=footer.css.map */

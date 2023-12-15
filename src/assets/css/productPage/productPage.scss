@@ -505,6 +505,7 @@
 .productListpage{
     .product{
         .filtersection{
+            width: 23%;
            .head{
              .title{
                 h2{
@@ -572,14 +573,14 @@
 }
 @media screen and (max-width: 1050px) {
  .productListpage{
-    position: relative;
     .product{
         display:unset;
+        position: relative;
         .filtersection{
             display:flex;
             position:absolute;
-            right: 0%;
-            top:3.7%;
+            right: 4%;
+            top:2.7%;
             z-index: 1;
             background: #ffffff;
             align-self: flex-end;
@@ -614,8 +615,6 @@
     .productListpage{
         .product{
             .filtersection{
-                top: 2%;
-                right: 4%;
                 height: 20%;
             }
             .productlist{

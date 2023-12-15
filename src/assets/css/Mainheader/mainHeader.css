@@ -147,41 +147,68 @@ head .hamburger p:hover {
     width: 150px;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 990px) {
+  head .nav_list ul {
+    gap: 15px;
+  }
+  head .nav_list ul li {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 770px) {
   head {
     padding-left: 20px;
     justify-content: unset;
     gap: 20px;
     position: relative;
   }
+  head .logo {
+    width: 80px;
+    height: 60px;
+  }
   head .nav_list {
     display: none;
   }
   head .searchBox {
-    width: 300px;
+    width: 200px;
+    height: 30px;
   }
   head .logos {
     display: none;
   }
   head .hamburger {
-    display: flex;
+    display: none;
     position: absolute;
     height: -moz-fit-content;
     height: fit-content;
-    width: 30%;
+    width: 22%;
     gap: 10px;
     padding: 10px;
     z-index: 1;
     border-radius: 8px;
-    bottom: -223%;
+    bottom: -252%;
     left: 2%;
     background-color: #F6F6F6;
     box-shadow: 0 2px 4px 1px gainsboro;
   }
   head .hamburger p {
-    font-size: 20px;
+    width: 100%;
+    font-size: 15px;
   }
   head .hamburger p:hover {
     background-color: rgba(108, 106, 111, 0.3568627451);
+  }
+}
+@media screen and (max-width: 640px) {
+  head .hamburger {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 360px) {
+  head .hamburger {
+    width: 45%;
+  }
+  head .hamburger p {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=mainHeader.css.map */

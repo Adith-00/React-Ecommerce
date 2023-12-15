@@ -8,7 +8,7 @@ return(
    <div className="wishlist">
     <h1 className="heading">Wishlist</h1>
     <div className="wishlistcontainer">
-        {/* <div className="wishlistitem">
+        <div className="wishlistitem">
             <Button style={"cross"} image={closeCross}/>
             <h2 className="image"><img src={cartimg} alt="product" /></h2>
             <div className="info">
@@ -20,8 +20,9 @@ return(
                 <p className="price">$250</p>
                 <Button style={"cartbutton"} buttontxt={"Add to Cart"}/>
             </div>
-        </div> */}
-        <MsgPage msgimg={emptyWishlist} msg={"Your wishlist is empty."} submsg={"You don’t have any products in the wishlist yet. You will find a lot of interesting products on our Shop page."} buttontext={"Continue Shoping"}/>
+        </div>
+        
+        {/* <MsgPage msgimg={emptyWishlist} msg={"Your wishlist is empty."} submsg={"You don’t have any products in the wishlist yet. You will find a lot of interesting products on our Shop page."} buttontext={"Continue Shoping"}/> */}
     </div>
    </div>
 

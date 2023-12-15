@@ -29,6 +29,7 @@ const Router = () => {
   const [emailerror,setMailerror] =useState('');
   const [passerror ,setPasserror] =useState('');
   const [productId ,setProductId]=useState('')
+  const [cart,setCart]=useState([])
   const [auths ,setAuth]=useState(true)
   useEffect(() => {
     FetchData(data, setData);
@@ -39,7 +40,7 @@ const Router = () => {
   return (
     <div className="test">
       <BrowserRouter>
-      <DataContext.Provider value={{ data, data2, feedback,email,setEmail,pass,setPass,emailerror,setMailerror,passerror ,setPasserror,auths,setAuth,productId,setProductId}}>
+      <DataContext.Provider value={{ data, data2, feedback,email,setEmail,pass,setPass,emailerror,setMailerror,passerror ,setPasserror,auths,setAuth,productId,setProductId,cart,setCart}}>
         <MainHeader />
             <Routes>
             <Route path="/" element={<SignInpage />} />

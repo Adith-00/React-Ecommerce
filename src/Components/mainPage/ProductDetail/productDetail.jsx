@@ -20,17 +20,22 @@ import { DataContext } from "../../../router/router";
 
 const ProductDetailpage = () => {
    const [items,setItem]=useState()
+   const{productId,data,cart,setCart}=useContext(DataContext);
   const service = [
     "Secure Payment",
     "SizeandPayment",
     "Freeshipping",
     "Free Shipping And Returns",
   ];
-  const{productId,data}=useContext(DataContext);
   useEffect(()=> {productId&& data?.map((item)=>{
     return  productId===item?.id ? (setItem(item)):null
   })},[productId])
- 
+  const AddtoCart =()=>{
+      {cart? setCart(...cart,items):
+        setCart(items)
+      }
+  }
+  console.log("cart",cart)
   console.log("><><><>>M",items)
    
   return (
@@ -96,7 +101,7 @@ const ProductDetailpage = () => {
             </div>
           </div>
           <div className="cartOptions">
-            <Button buttontxt="Add to cart" image={whitecart} />
+            <Button buttontxt="Add to cart" image={whitecart} btnfun={AddtoCart} />
             <p className="price">{items&&items.itemPrice}</p>
           </div>
           <div className="services">
