@@ -20,6 +20,13 @@
   text-align: left;
   color: rgba(60, 66, 66, 0.6274509804);
 }
+.ProfileInfo .path span {
+  display: flex;
+}
+.ProfileInfo .path span img {
+  width: 100%;
+  display: block;
+}
 .ProfileInfo .informationdashbord {
   display: flex;
   justify-content: space-between;
@@ -132,7 +139,7 @@
   border-radius: 8px;
   overflow: hidden;
 }
-.ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .image image {
+.ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .image img {
   width: 100%;
   display: block;
 }
@@ -608,5 +615,214 @@
   }
   .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .cartbutton {
     width: 340px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .ProfileInfo .informationdashbord {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .ProfileInfo .informationdashbord .navigation {
+    width: 100%;
+  }
+  .ProfileInfo .informationdashbord .navigation .navigationOption {
+    flex-direction: row;
+  }
+  .ProfileInfo .informationdashbord .content {
+    width: 100%;
+  }
+  .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 8px;
+  }
+  .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .cartbutton {
+    width: 20%;
+  }
+  .ProfileInfo .informationdashbord .content .oderpage {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .about p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .price {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .cartbutton {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 497px) {
+  .ProfileInfo .informationdashbord .navigation .navigationOption .option {
+    padding: 3px;
+  }
+  .ProfileInfo .informationdashbord .navigation .navigationOption .option i {
+    display: none;
+  }
+  .ProfileInfo .informationdashbord .navigation .navigationOption .option p {
+    font-size: 12px;
+    line-height: 11px;
+  }
+  .ProfileInfo .informationdashbord .navigation .navigationOption .option p:hover {
+    border-bottom: 1px solid #8A33FD;
+  }
+  .ProfileInfo .informationdashbord .navigation .navigationOption .option p span {
+    display: flex;
+    width: 15px;
+    height: 15px;
+  }
+  .ProfileInfo .informationdashbord .navigation .navigationOption .option p span img {
+    width: 100%;
+    display: block;
+  }
+  .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .about p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .price {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .cartbutton {
+    width: 70%;
+  }
+  .ProfileInfo .informationdashbord .content .oderpage .heading {
+    font-size: 25px;
+  }
+  .ProfileInfo .informationdashbord .content .oderpage .OderLists .OderHeading h1 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .oderdetails .oderInfo h2 {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .oderdetails .oderInfo p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .oderdetails .paymentinfo p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .productdetails {
+    flex-wrap: wrap;
+    gap: 9px;
+    padding: 9px;
+  }
+  .ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .productdetails .product .info p {
+    font-size: 13px;
+  }
+  .ProfileInfo .informationdashbord .content .oderpage .OderLists .oders .productdetails button {
+    width: 30%;
+    font-size: 9px;
+    height: 45px;
+  }
+  .ProfileInfo .informationdashbord .content .addressedit .heading {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .ProfileInfo .informationdashbord .content .addressedit .editSection .heading {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs input::-moz-placeholder {
+    font-size: 10px;
+  }
+  .ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs input::placeholder {
+    font-size: 10px;
+  }
+  .ProfileInfo .informationdashbord .content .addressedit .chekBoxes p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .ProfileInfo .informationdashbord .content .addressedit .buttons button {
+    width: 30%;
+    height: 45px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .ProfileInfo .path p {
+    font-size: 10px;
+  }
+  .ProfileInfo .informationdashbord .navigation .heading .titlesection .emptydiv {
+    width: 8px;
+  }
+  .ProfileInfo .informationdashbord .navigation .heading .titlesection .title {
+    font-size: 25px;
+  }
+  .ProfileInfo .informationdashbord .navigation .navigationOption .option p {
+    font-size: 9px;
+  }
+  .ProfileInfo .informationdashbord .content .wishlist .heading {
+    font-size: 20px;
+  }
+  .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem {
+    gap: 10px;
+  }
+  .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info {
+    justify-content: space-between;
+    gap: 9px;
+  }
+  .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .about p {
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .price {
+    font-size: 11px;
+    line-height: 12px;
+    align-self: center;
+  }
+  .ProfileInfo .informationdashbord .content .wishlist .wishlistcontainer .wishlistitem .info .cartbutton {
+    width: 70%;
+    height: 30px;
+    font-size: 9px;
+  }
+  .ProfileInfo .informationdashbord .content .userinfo .heading {
+    font-size: 20px;
+    line-height: 21px;
+  }
+  .ProfileInfo .informationdashbord .content .userinfo .contactDetails .contactheading {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .ProfileInfo .informationdashbord .content .userinfo .contactDetails .inputs .label {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .ProfileInfo .informationdashbord .content .userinfo .contactDetails .inputs input {
+    font-size: 13px;
+  }
+  .ProfileInfo .informationdashbord .content .userinfo .contactDetails .inputs button {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .heading {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .item .heading {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .item .phone, .ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .item .address {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .item .addresstype p {
+    font-size: 12px;
+    line-height: 11px;
+  }
+  .ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .item .buttons button {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=profile.css.map */

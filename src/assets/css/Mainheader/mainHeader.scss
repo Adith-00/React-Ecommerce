@@ -176,6 +176,17 @@ head{
         }
       }
    }
+   .head2{
+      .left{
+        width: auto;
+        .search_box{
+            display: none;
+        }
+      }
+      .right{
+        width: auto;
+      }
+   }
 }
 
 
@@ -230,6 +241,13 @@ head{
         width: 40%;
     }
   }
+  .head2{
+     .right{
+        .in_active,.active{
+            display: none;
+        }
+     }
+  }
 }
 @media screen and (max-width: 360px) {
     head{
@@ -239,5 +257,20 @@ head{
             font-size: 12px;
           }
       }
+    }
+    .head2{
+        height: fit-content;
+        padding: 10px;
+        .left{
+            .logo{
+                width: 80px;
+                height: fit-content;
+            }
+        }
+        .right{
+            p{
+                font-size: 11px;
+            }
+        }
     }
   }

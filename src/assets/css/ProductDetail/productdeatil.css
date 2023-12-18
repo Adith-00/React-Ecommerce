@@ -43,6 +43,9 @@
 .Productdetailpage .oderingSection .productDetails .path {
   display: flex;
   padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .Productdetailpage .oderingSection .productDetails .path p {
   font-size: 18px;
@@ -376,7 +379,7 @@
     font-size: 16px;
   }
 }
-@media screen and (max-width: 1054px) {
+@media screen and (max-width: 1118px) {
   .Productdetailpage .oderingSection {
     width: 100%;
     position: relative;
@@ -402,7 +405,7 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 880px) {
   .Productdetailpage .oderingSection {
     width: 100%;
     justify-content: space-around;
@@ -412,7 +415,7 @@
   .Productdetailpage .oderingSection .produtImages {
     flex-direction: row;
     position: absolute;
-    top: 55%;
+    top: 15%;
     left: 6%;
     width: -moz-fit-content;
     width: fit-content;
@@ -420,7 +423,9 @@
     height: fit-content;
   }
   .Productdetailpage .oderingSection .imageviewer {
-    width: 100%;
+    width: 60%;
+    display: flex;
+    align-self: center;
   }
   .Productdetailpage .oderingSection .imageviewer img {
     width: 100%;
@@ -428,5 +433,257 @@
   .Productdetailpage .oderingSection .productDetails {
     width: 100%;
     padding: 30px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .Productdetailpage .titlesection .emptydiv {
+    width: 8px;
+  }
+  .Productdetailpage .titlesection .title {
+    font-size: 25px;
+  }
+  .Productdetailpage .oderingSection .productDetails {
+    gap: 25px;
+  }
+  .Productdetailpage .oderingSection .productDetails .cartOptions button {
+    font-size: 17px;
+  }
+  .Productdetailpage .ProductDescription .details .grid .itm1 .propertytype {
+    font-size: 14px;
+  }
+  .Productdetailpage .ProductDescription .video {
+    width: 90%;
+  }
+  .Productdetailpage .ProductDescription .video img {
+    width: 100%;
+    display: block;
+  }
+  .Productdetailpage .Products .cards .categorycard {
+    width: 40%;
+  }
+  .Productdetailpage .Products .cards .categorycard .cardimage {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .Productdetailpage .Products .cards .categorycard .cardimage img {
+    width: 100%;
+    display: block;
+  }
+  .Productdetailpage .Products .cards .categorycard .info .text {
+    gap: 6px;
+  }
+  .Productdetailpage .Products .cards .categorycard .info .text .title {
+    font-size: 13px;
+    line-height: normal;
+  }
+  .Productdetailpage .Products .cards .categorycard .info .text .sub {
+    font-size: 11px;
+    line-height: normal;
+  }
+  .Productdetailpage .Products .cards .categorycard .info .price {
+    padding: 10px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Productdetailpage .titlesection .emptydiv {
+    width: 8px;
+  }
+  .Productdetailpage .titlesection .title {
+    font-size: 23px;
+  }
+  .Productdetailpage .oderingSection .produtImages {
+    left: 3%;
+    height: 40px;
+    width: 40px;
+  }
+  .Productdetailpage .oderingSection .imageviewer {
+    width: 70%;
+  }
+  .Productdetailpage .oderingSection .productDetails {
+    gap: 25px;
+  }
+  .Productdetailpage .oderingSection .productDetails h1 {
+    font-size: 27px;
+  }
+  .Productdetailpage .ProductDescription .details .description .heading p {
+    font-size: 13px;
+  }
+  .Productdetailpage .ProductDescription .details .description .info p {
+    font-size: 12px;
+    line-height: 13px;
+  }
+  .Productdetailpage .ProductDescription .details .grid .itm1 {
+    padding: 10px;
+  }
+  .Productdetailpage .ProductDescription .details .grid .itm1 .property {
+    font-size: 12px;
+  }
+  .Productdetailpage .ProductDescription .details .grid .itm1 .propertytype {
+    font-size: 12px;
+    line-height: 13px;
+  }
+  .Productdetailpage .ProductDescription .video {
+    width: 90%;
+  }
+  .Productdetailpage .ProductDescription .video img {
+    width: 100%;
+    display: block;
+  }
+  .Productdetailpage .Products .cards .categorycard {
+    width: 40%;
+  }
+  .Productdetailpage .Products .cards .categorycard .cardimage {
+    border-radius: 8px;
+  }
+  .Productdetailpage .Products .cards .categorycard .info {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  .Productdetailpage .Products .cards .categorycard .info .text {
+    gap: 6px;
+  }
+  .Productdetailpage .Products .cards .categorycard .info .text .title {
+    font-size: 13px;
+    line-height: normal;
+  }
+  .Productdetailpage .Products .cards .categorycard .info .text .sub {
+    font-size: 11px;
+    line-height: normal;
+  }
+  .Productdetailpage .Products .cards .categorycard .info .price {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .Productdetailpage .titlesection .emptydiv {
+    width: 6px;
+  }
+  .Productdetailpage .titlesection .title {
+    font-size: 18px;
+  }
+  .Productdetailpage .oderingSection .imageviewer {
+    width: 100%;
+  }
+  .Productdetailpage .oderingSection .produtImages {
+    top: 35%;
+    left: 6%;
+  }
+  .Productdetailpage .oderingSection .productDetails .path p {
+    font-size: 12px;
+  }
+  .Productdetailpage .oderingSection .productDetails .rating {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .Productdetailpage .oderingSection .productDetails .rating .comments p {
+    font-size: 13px;
+  }
+  .Productdetailpage .oderingSection .productDetails .Sizeselector {
+    gap: 10px;
+  }
+  .Productdetailpage .oderingSection .productDetails .Sizeselector .heading .main {
+    font-size: 14px;
+  }
+  .Productdetailpage .oderingSection .productDetails .Sizeselector .heading .sub {
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    gap: 5px;
+  }
+  .Productdetailpage .oderingSection .productDetails .Sizeselector .heading .sub i {
+    width: 10px;
+    height: 10px;
+  }
+  .Productdetailpage .oderingSection .productDetails .Sizeselector .heading .sub i img {
+    width: 100%;
+    display: block;
+  }
+  .Productdetailpage .oderingSection .productDetails .Sizeselector .sizetile button {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .Productdetailpage .oderingSection .productDetails .colorSelector {
+    gap: 10px;
+  }
+  .Productdetailpage .oderingSection .productDetails .colorSelector .heading {
+    font-size: 14px;
+  }
+  .Productdetailpage .oderingSection .productDetails .colorSelector .colortile i {
+    width: 15px;
+    height: 15px;
+  }
+  .Productdetailpage .oderingSection .productDetails .cartOptions button {
+    font-size: 12px;
+    width: 100px;
+    height: 40px;
+    gap: 4px;
+  }
+  .Productdetailpage .oderingSection .productDetails .cartOptions button span {
+    width: 10px;
+    height: 10px;
+  }
+  .Productdetailpage .oderingSection .productDetails .cartOptions button span img {
+    width: 100%;
+    display: block;
+  }
+  .Productdetailpage .oderingSection .productDetails .cartOptions .price {
+    font-size: 12px;
+    width: 100px;
+    height: 40px;
+  }
+  .Productdetailpage .oderingSection .productDetails .services .item i {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+  }
+  .Productdetailpage .oderingSection .productDetails .services .item p {
+    font-size: 11px;
+  }
+  .Productdetailpage .ProductDescription .details .description .heading {
+    gap: 7px;
+  }
+  .Productdetailpage .ProductDescription .details .description .heading p {
+    font-size: 10px;
+  }
+  .Productdetailpage .ProductDescription .details .description .info p {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .Productdetailpage .ProductDescription .details .grid {
+    padding: 10px;
+  }
+  .Productdetailpage .ProductDescription .details .grid .itm1 {
+    padding: 8px;
+  }
+  .Productdetailpage .ProductDescription .details .grid .itm1 .property {
+    font-size: 10px;
+    line-height: 11px;
+  }
+  .Productdetailpage .ProductDescription .details .grid .itm1 .propertytype {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .Productdetailpage .Products .cards {
+    gap: 10px;
+  }
+  .Productdetailpage .Products .cards .categorycard {
+    width: 46%;
+  }
+  .Productdetailpage .Products .cards .categorycard .info .text .title {
+    font-size: 10px;
+  }
+  .Productdetailpage .Products .cards .categorycard .heart {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+  }
+  .Productdetailpage .Products .cards .categorycard .heart img {
+    width: 100%;
+    display: block;
   }
 }/*# sourceMappingURL=productdeatil.css.map */

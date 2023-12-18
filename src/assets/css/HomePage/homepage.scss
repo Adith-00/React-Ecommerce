@@ -1537,7 +1537,7 @@
                 .cards{
                     .new-arrival-card{
                         .cardimage{
-                            width: 220px;
+                            width: 225px;
                         }
                         .cardinfo{
                             font-size: 16px;
@@ -1551,7 +1551,7 @@
               width: 90%;
               .card{
                 .cardimage{
-                    width: 220px;
+                    width: 225px;
                    img{
                       width: 100%;
                       display: block;
@@ -1560,7 +1560,7 @@
                  .info{
                     gap: 11px;
                     top: 24%;
-                    right: 0;
+                    right: 1%;
                     width: 134px;
                     .top{
                       font-size: 16px;
@@ -1721,6 +1721,7 @@
         }
         .limelight{
             .cardsection{
+                gap: 6px;
                 .categorycard{
                     width: 123px;
                     height: fit-content;

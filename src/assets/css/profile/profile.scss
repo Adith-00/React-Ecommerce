@@ -19,6 +19,13 @@
             text-align: left;
             color: #3c4242a0;
         }
+        span{
+            display: flex;
+            img{
+                width: 100%;
+                display: block;
+            }
+        }
 
     }
 
@@ -149,7 +156,7 @@
                             border-radius: 8px;
                             overflow: hidden;
 
-                            image {
+                            img{
                                 width: 100%;
                                 display: block;
                             }
@@ -764,4 +771,345 @@
             }
         }
     }
+}
+@media screen and (max-width: 770px) {
+    .ProfileInfo{
+        .informationdashbord{
+            flex-direction: column;
+            gap: 30px;
+            .navigation{
+                width: 100%;
+                   .navigationOption{
+                    flex-direction: row;
+                   }
+            }
+            .content{
+                width: 100%;
+                .wishlist{
+                    .wishlistcontainer{
+                        .wishlistitem{
+                            .info{
+                                flex-wrap: wrap;
+                                justify-content: space-around;
+                                gap: 8px;
+                                .cartbutton{
+                                    width: 20%;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .oderpage{
+                    width:100% ;
+                }
+            }
+        }
+       
+    }
+}
+@media screen and (max-width: 640px) {
+  .ProfileInfo{
+    .informationdashbord{
+        .content{
+            .wishlist{
+                .wishlistcontainer{
+                    .wishlistitem{
+                        .info{
+                            .about {
+                                p {
+                                    font-size:14px ;
+                                    line-height: 19px;
+                                }
+                            }
+                            .price{
+                                font-size: 14px;
+                                line-height: 19px;
+                            }
+
+                            .cartbutton{
+                                width: 70%;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+  }
+}
+@media screen and (max-width: 497px) {
+    .ProfileInfo{
+        .informationdashbord{
+            .navigation{
+                .navigationOption{
+                    .option{
+                         padding: 3px;
+                         i{
+                            display: none;
+                         }
+                        p{
+                            font-size: 12px;
+                            line-height: 11px;
+                            &:hover{
+                                border-bottom: 1px solid  #8A33FD;
+                            }
+                            span{
+                                display: flex;
+                                width: 15px;
+                                height: 15px;
+                                img{
+                                    width: 100%;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .content{
+                .wishlist{
+                    .wishlistcontainer{
+                        .wishlistitem{
+                            .info{
+                                .about {
+                                    p {
+                                        font-size:12px ;
+                                        line-height: 14px;
+                                    }
+                                }
+                                .price{
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                }
+    
+                                .cartbutton{
+                                    width: 70%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .oderpage{
+                    .heading{
+                        font-size: 25px;
+                    }
+                    .OderLists{
+                        .OderHeading{
+                            h1{
+                                font-size: 15px;
+                                line-height: 17px;
+                            }
+                        }
+                        .oders{
+                            .oderdetails{
+                                .oderInfo{
+                                    h2{
+                                        font-size: 13px;
+                                        line-height: 17px;
+                                    }
+                                    p{
+                                        font-size: 12px;
+                                        line-height: 14px;
+                                    }
+                                }
+                                .paymentinfo{
+                                    p{
+                                        font-size: 12px;
+                                        line-height: 14px;
+                                    }
+                                }
+                            }
+                            .productdetails{
+                                flex-wrap: wrap;
+                                gap: 9px;
+                                padding: 9px;
+                                .product{
+                                    .info{
+                                        p{
+                                            font-size: 13px;
+                                        }
+                                    }
+                                   
+                                }
+                                button{
+                                    width: 30%;
+                                    font-size: 9px;
+                                    height: 45px;
+                                }
+                                
+                            }
+                            
+                            
+                        }
+                    }
+                }
+                .addressedit{
+                    .heading{
+                        font-size: 20px;
+                        line-height: 22px;
+                    }
+                    .editSection{
+                        .heading{
+                            font-size: 18px;
+                            line-height: 20px;
+                        }
+                        .inputfeild{
+                            .inputs{
+                                p{
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                }
+                                input{
+                                    &::placeholder{
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                           
+                        }
+                    }
+                    .chekBoxes{
+                        p{
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+                    }
+                    .buttons{
+                        button{
+                            width: 30%;
+                            height: 45px;
+                            font-size: 13px;
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 360px) {
+
+    .ProfileInfo{
+        
+        .path{
+            p{
+                font-size: 10px;
+            }
+        }
+        .informationdashbord{
+            .navigation{
+               .heading{
+                .titlesection{
+                    .emptydiv{
+                      width: 8px;
+                    }  
+                    .title{
+                      font-size: 25px;
+                    }
+                }
+               }
+                .navigationOption{
+                    .option{
+                        p{
+                            font-size: 9px;
+                        }
+                    }
+                }
+            }
+            .content{
+                .wishlist{
+                    .heading{
+                        font-size: 20px;
+                    }
+                    .wishlistcontainer{
+                        .wishlistitem{
+                            gap: 10px;
+                            .info{
+                                justify-content: space-between;
+                                gap: 9px;
+                                .about {
+                                    p {
+                                        font-size:11px ;
+                                        line-height: 12px;
+                                    }
+                                }
+                                .price{
+                                    font-size: 11px;
+                                    line-height: 12px;
+                                    align-self: center;
+                                }
+    
+                                .cartbutton{
+                                    width: 70%;
+                                    height: 30px;
+                                    font-size: 9px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .userinfo{
+                    .heading{
+                        font-size: 20px;
+                        line-height: 21px;
+                    }
+                    .contactDetails{
+                        .contactheading{
+                            font-size: 15px;
+                            line-height: 17px;
+                        }
+                        .inputs{
+                            .label{
+                                font-size: 11px;
+                                line-height: 14px;
+                            }
+                            input{
+                                font-size: 13px;
+                            }
+                            button{
+                                font-size: 13px;
+                                line-height: 15px;
+                            }
+                        }
+                    }
+                    .Shippingaddress{
+                        .heading{
+                            font-size: 18px;
+                            line-height: 20px;
+
+                        }
+                        .address{
+                            .item{
+                                .heading{
+                                    font-size: 14px;
+                                    line-height: 15px;
+                                }
+                                .phone,.address{
+                                     font-size: 12px;
+                                     line-height: 12px;
+                                }
+                                .addresstype{
+                                    p{
+                                        font-size: 12px;
+                                        line-height: 11px;
+
+                                    }
+
+                                }
+                                .buttons{
+                                    button{
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

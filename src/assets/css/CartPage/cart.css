@@ -269,4 +269,290 @@
   color: #F6F6F6;
   background-color: #8A33FD;
   cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+  .cartpage .mid .heading .product {
+    width: 20%;
+  }
+  .cartpage .mid .heading .others {
+    width: 15%;
+  }
+  .cartpage .mid .item .product {
+    flex-direction: column;
+    width: 20%;
+  }
+  .cartpage .mid .item .product .details {
+    align-items: flex-start;
+  }
+  .cartpage .mid .item .price, .cartpage .mid .item .quantity, .cartpage .mid .item .shipping, .cartpage .mid .item .total, .cartpage .mid .item .delete {
+    width: 15%;
+  }
+  .cartpage .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cartpage .bottom .billsection {
+    align-self: flex-end;
+  }
+}
+@media screen and (max-width: 680px) {
+  .cartpage .mid .heading .product {
+    font-size: 14px;
+    min-width: 20%;
+  }
+  .cartpage .mid .heading .others {
+    font-size: 14px;
+    min-width: 15%;
+  }
+  .cartpage .mid .item .product {
+    gap: 10px;
+    min-width: 20%;
+  }
+  .cartpage .mid .item .product h2 {
+    width: 60px;
+    height: 60px;
+  }
+  .cartpage .mid .item .product h2 img {
+    width: 100%;
+    display: block;
+  }
+  .cartpage .mid .item .product .details {
+    align-items: flex-start;
+  }
+  .cartpage .mid .item .product .details .name {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .cartpage .mid .item .product .details .color, .cartpage .mid .item .product .details .size {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .cartpage .mid .item .price, .cartpage .mid .item .quantity, .cartpage .mid .item .shipping, .cartpage .mid .item .total, .cartpage .mid .item .delete {
+    min-width: 15%;
+  }
+  .cartpage .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cartpage .bottom .billsection {
+    align-self: flex-end;
+  }
+}
+@media screen and (max-width: 540px) {
+  .cartpage .mid .heading .product {
+    font-size: 14px;
+    min-width: 20%;
+  }
+  .cartpage .mid .heading .others {
+    font-size: 14px;
+    min-width: 15%;
+  }
+  .cartpage .mid .item .price, .cartpage .mid .item .quantity, .cartpage .mid .item .shipping, .cartpage .mid .item .total, .cartpage .mid .item .delete {
+    min-width: 15%;
+    font-size: 14px;
+  }
+  .cartpage .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cartpage .bottom .discountSection {
+    gap: 30px;
+  }
+  .cartpage .bottom .discountSection .couponinput {
+    width: 80%;
+  }
+  .cartpage .bottom .discountSection .couponinput input {
+    width: 60%;
+    height: 35px;
+  }
+  .cartpage .bottom .discountSection .couponinput button {
+    width: 40%;
+    height: 35px;
+    font-size: 12px;
+  }
+  .cartpage .bottom .discountSection button {
+    width: 50%;
+    height: 35px;
+    font-size: 12px;
+  }
+  .cartpage .bottom .billsection {
+    gap: 30px;
+    align-self: flex-end;
+  }
+  .cartpage .bottom .billsection .bill .total, .cartpage .bottom .billsection .bill .shipping {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .cartpage .bottom .billsection .bill .Grandtotal {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .cartpage .bottom .billsection .chekoutbtn {
+    width: 70%;
+    height: 35px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .cartpage .top {
+    padding: 10px;
+  }
+  .cartpage .top .path {
+    font-size: 14px;
+  }
+  .cartpage .top .note {
+    font-size: 13px;
+  }
+  .cartpage .mid .heading {
+    padding: 8px;
+  }
+  .cartpage .mid .heading .product {
+    font-size: 12px;
+    min-width: 20%;
+  }
+  .cartpage .mid .heading .others {
+    font-size: 12px;
+    min-width: 15%;
+  }
+  .cartpage .mid .item {
+    padding: 8px;
+  }
+  .cartpage .mid .item .product {
+    gap: 10px;
+    min-width: 20%;
+  }
+  .cartpage .mid .item .product h2 {
+    width: 40px;
+    height: 40px;
+  }
+  .cartpage .mid .item .product h2 img {
+    width: 100%;
+    display: block;
+  }
+  .cartpage .mid .item .product .details {
+    align-items: flex-start;
+  }
+  .cartpage .mid .item .product .details .name {
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .cartpage .mid .item .product .details .color, .cartpage .mid .item .product .details .size {
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .cartpage .mid .item .price, .cartpage .mid .item .quantity, .cartpage .mid .item .shipping, .cartpage .mid .item .total, .cartpage .mid .item .delete {
+    min-width: 15%;
+    font-size: 12px;
+  }
+  .cartpage .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cartpage .bottom .discountSection .heading .main {
+    font-size: 15px;
+    list-style: 17px;
+  }
+  .cartpage .bottom .discountSection .heading .sub {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cartpage .bottom .discountSection .couponinput button {
+    font-size: 10px;
+  }
+  .cartpage .bottom .billsection {
+    align-self: flex-end;
+  }
+  .cartpage .bottom .billsection .bill .total, .cartpage .bottom .billsection .bill .shipping {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .cartpage .bottom .billsection .bill .Grandtotal {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .cartpage .top .path {
+    font-size: 11px;
+  }
+  .cartpage .top .note {
+    font-size: 10px;
+  }
+  .cartpage .top .note span {
+    font-size: 10px;
+  }
+  .cartpage .mid .heading {
+    padding: 5px;
+  }
+  .cartpage .mid .heading .product {
+    font-size: 9px;
+  }
+  .cartpage .mid .heading .others {
+    font-size: 9px;
+  }
+  .cartpage .mid .item {
+    padding: 5px;
+  }
+  .cartpage .mid .item .product {
+    gap: 5px;
+  }
+  .cartpage .mid .item .product h2 {
+    width: 35px;
+    height: 35px;
+  }
+  .cartpage .mid .item .product .details .name {
+    font-size: 9px;
+    line-height: 10px;
+  }
+  .cartpage .mid .item .product .details .color, .cartpage .mid .item .product .details .size {
+    font-size: 9px;
+    line-height: 10px;
+  }
+  .cartpage .mid .item .price, .cartpage .mid .item .quantity, .cartpage .mid .item .shipping, .cartpage .mid .item .total, .cartpage .mid .item .delete {
+    font-size: 9px;
+  }
+  .cartpage .mid .item .delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cartpage .mid .item .delete i {
+    display: flex;
+    width: 15px;
+    height: 15px;
+  }
+  .cartpage .mid .item .delete i img {
+    width: 100%;
+    display: block;
+  }
+  .cartpage .bottom .discountSection {
+    gap: 8px;
+  }
+  .cartpage .bottom .discountSection .heading .main {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .cartpage .bottom .discountSection .heading .sub {
+    font-size: 12px;
+    line-height: 13px;
+  }
+  .cartpage .bottom .discountSection .couponinput button {
+    font-size: 9px;
+  }
+  .cartpage .bottom .discountSection button {
+    font-size: 9px;
+    height: 30px;
+  }
+  .cartpage .bottom .billsection .bill .total, .cartpage .bottom .billsection .bill .shipping {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .cartpage .bottom .billsection .bill .Grandtotal {
+    font-size: 16px;
+    line-height: 17px;
+  }
+  .cartpage .bottom .billsection .bill .chekoutbtn {
+    font-size: 9px;
+  }
 }/*# sourceMappingURL=cart.css.map */

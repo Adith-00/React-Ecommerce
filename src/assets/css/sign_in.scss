@@ -22,8 +22,9 @@ body{
     height:fit-content;
     overflow: hidden;
     position: relative;
+    max-height: 95vh;
+    min-height: 80vh;
     .Spotlight{
-       height: 100vh;
        display: flex;
        width: 100%;
        flex: 1;
@@ -41,10 +42,9 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        align-self: center;
+        padding-top:50px ;
         width: 50%;
-        height: 80%;
-        padding: 70px;
+        height: 90%;
         .sign_in_section{
             display: flex;
             gap: 30px;
@@ -64,7 +64,11 @@ body{
                 flex-direction: column;
                 gap: 30px;
                 .Google{
-                    width: 567px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    justify-content: center;
+                    width: 100%;
                     height: 58px;
                     border-radius: 8px;
                     border: 1px solid #3C4242;
@@ -76,12 +80,20 @@ body{
                     color: #8A33FD;
                     cursor: pointer;
                     span{
-                     padding: 5px 10px 5px 5px;
+                      display: flex;
+                      img{
+                        width: 100%;
+                        display: block;
+                      }
                     }
 
                 }
                 .Twitter{
-                    width: 567px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    width: 100%;
                     height: 58px;  
                     border-radius: 8px;
                     border: 1px solid #3C4242;
@@ -93,8 +105,12 @@ body{
                     color: #8A33FD;
                     cursor: pointer;
                     span{
-                     padding: 5px 10px 5px 5px;
-                    }
+                        display: flex;
+                        img{
+                          width: 100%;
+                          display: block;
+                        }
+                      }
                 }
             }
             .divider {
@@ -133,7 +149,7 @@ body{
                         
                     }
                     .username{
-                        width: 567px;
+                        width: 100%;
                         height: 58px;
                         border-radius: 8px;
                         border: 1px solid rgba(0, 0, 0, 0.519);
@@ -166,7 +182,7 @@ body{
                         }
                     }
                     .password{ 
-                        width: 567px;
+                        width: 100%;
                         height: 58px;
                         border-radius: 8px;
                         border: 1px solid rgba(0, 0, 0, 0.519);
@@ -237,7 +253,7 @@ body{
         .Spotlight{
             height: fit-content;
             .spotImg{
-                 width: 50%;
+                 width: 60%;
                  height:100%;
                  margin: 0 auto;
                  img{
@@ -247,7 +263,6 @@ body{
                  }
             }
             .sign_inForm{
-                padding: 40px;
                 .sign_in_section{
                     width: 470px;
                     gap:10px;
@@ -275,4 +290,153 @@ body{
         }
     }
 
+}
+
+@media screen and (max-width: 1060px){
+ .Sign-IN{
+    .Spotlight{
+        flex-direction: column;
+        position: relative;
+        .spotImg{
+            width: 100%;
+        }
+        .sign_inForm{
+            position: absolute;
+            padding: 40px;
+            top: 4%;
+            right: 27%;
+            border-radius:10px;
+            background-color: whitesmoke;
+            box-shadow: rgba(9, 30, 68, 0.25) 0px 5px;
+            height: fit-content;
+            .sign_in_section{
+                width: 470px;
+                gap:15px;
+                height: fit-content;
+                .title{
+                    font-size: 25px;
+                }
+
+                .section1{
+                    .Google,.Twitter{
+                       font-size: 15px;
+                    }
+                }
+            }
+           
+        }
+    }
+ }
+
+}
+@media screen and (max-width: 770px){
+
+    .Sign-IN{
+        .Spotlight{
+            .spotImg{
+                width: 100%;
+            }
+            .sign_inForm{
+                position: absolute;
+                padding: 30px;
+                top: 8%;
+                right: 20%;
+                width: 60%;
+                gap: 20px;
+                .sign_in_section{
+                    width: 90%;
+                    gap:15px;
+                    height: fit-content;
+                    .title{
+                        font-size: 25px;
+                    }
+    
+                    .section1{
+                        gap: 20px;
+                        .Google,.Twitter{
+                           height: 45px;
+                        }
+                    }
+                    .section2{
+                        gap: 20px;
+                        .username-holder{
+                            .label{
+                                font-size: 12px;
+                                line-height: 15px;
+                            }
+                            .username{
+                                height: 45px;
+                            }
+                        }
+                        .password-holder{
+                            .label{
+                                font-size: 12px;
+                                line-height: 15px;
+                            }
+                            .password{
+                                height: 45px;
+                            }
+                            .sublabel{
+                                .forget_pass{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                    .section3{
+                        .sign_in_btn{
+                            width: 30%;
+                            height: 45px;
+                        }
+                        .signup{
+                            font-size: 12px;
+                        }
+                    }
+                }
+               
+            }
+        }
+     }
+
+}
+@media screen and (max-width: 560px){
+
+    .Sign-IN{
+        .Spotlight{
+            .spotImg{
+                width: 170%;
+            }
+            .sign_inForm{
+                width: 75%;
+                padding: 15px;
+                right: 10%;
+            }
+            
+        }
+    }
+}
+@media screen and (max-width: 330px){
+
+    .Sign-IN{
+        .Spotlight{
+            .spotImg{
+                width: 200%;
+            }
+            .sign_inForm{
+                width: 95%;
+                padding: 15px;
+                right: 3%;
+                .sign_in_section{
+                    gap: 20px;
+                    .section1{
+                        gap: 10px;
+                    }
+                    .section2{
+                        gap: 10px;
+                    }
+                }
+            }
+            
+        }
+    }
 }

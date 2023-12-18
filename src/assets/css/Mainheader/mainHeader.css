@@ -154,6 +154,15 @@ head .hamburger p:hover {
   head .nav_list ul li {
     font-size: 15px;
   }
+  .head2 .left {
+    width: auto;
+  }
+  .head2 .left .search_box {
+    display: none;
+  }
+  .head2 .right {
+    width: auto;
+  }
 }
 @media screen and (max-width: 770px) {
   head {
@@ -203,6 +212,9 @@ head .hamburger p:hover {
   head .hamburger {
     width: 40%;
   }
+  .head2 .right .in_active, .head2 .right .active {
+    display: none;
+  }
 }
 @media screen and (max-width: 360px) {
   head .hamburger {
@@ -210,5 +222,18 @@ head .hamburger p:hover {
   }
   head .hamburger p {
     font-size: 12px;
+  }
+  .head2 {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
+  }
+  .head2 .left .logo {
+    width: 80px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .head2 .right p {
+    font-size: 11px;
   }
 }/*# sourceMappingURL=mainHeader.css.map */

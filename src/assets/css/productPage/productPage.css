@@ -357,7 +357,7 @@
   border-radius: 50px;
   cursor: pointer;
 }
-.productListpage .product .productlist .cards .categorycard .heart image {
+.productListpage .product .productlist .cards .categorycard .heart img {
   width: 100%;
   display: block;
 }
@@ -521,7 +521,7 @@
     background: #ffffff;
     align-self: flex-end;
     justify-self: right;
-    width: 30%;
+    width: 50%;
     height: 30%;
     overflow: scroll;
     border: none;
@@ -545,5 +545,186 @@
   }
   .productListpage .product .productlist .cards {
     gap: 70px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .productListpage .titlesection .emptydiv {
+    width: 5px;
+  }
+  .productListpage .titlesection .title {
+    font-size: 25px;
+    line-height: 20px;
+  }
+  .productListpage .product .filtersection {
+    top: 1%;
+  }
+  .productListpage .product .productlist .cards {
+    gap: 15px;
+  }
+  .productListpage .product .productlist .cards .categorycard {
+    width: 40%;
+  }
+  .productListpage .product .productlist .cards .categorycard .cardimage {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .productListpage .product .productlist .cards .categorycard .cardimage img {
+    width: 100%;
+    display: block;
+  }
+  .productListpage .product .productlist .cards .categorycard .info .text {
+    display: flex;
+    overflow: hidden;
+  }
+  .productListpage .product .productlist .cards .categorycard .info .text .title {
+    overflow: hidden;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .productListpage .product .productlist .cards .categorycard .info .text .sub {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .productListpage .product .productlist .cards .categorycard .info .price {
+    background-color: #F6F6F6;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .productListpage .advertaisment .adContent .msgHead {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .productListpage .advertaisment .adContent .msg {
+    font-size: 13px;
+    line-height: 26px;
+  }
+  .productListpage .pricingtable .table .data .head .title, .productListpage .pricingtable .table .data .head .pricetitle {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 19px;
+  }
+  .productListpage .pricingtable .table .data .item .itemname, .productListpage .pricingtable .table .data .item .price {
+    padding: 15px 20px 15px 20px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .productListpage .titlesection .emptydiv {
+    width: 5px;
+  }
+  .productListpage .titlesection .title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .productListpage .product .filtersection {
+    top: 2%;
+  }
+  .productListpage .product .productlist {
+    padding: 20px;
+  }
+  .productListpage .product .productlist .heading {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .productListpage .product .productlist .heading .title {
+    font-size: 20px;
+  }
+  .productListpage .product .productlist .heading .filter .cat1, .productListpage .product .productlist .heading .filter .cat2 {
+    font-size: 20px;
+  }
+  .productListpage .product .productlist .cards .categorycard {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .productListpage .product .productlist .cards {
+    gap: 15px;
+  }
+  .productListpage .product .productlist .cards .categorycard {
+    width: 45%;
+  }
+  .productListpage .product .productlist .cards .categorycard .cardimage {
+    border-radius: 8px;
+  }
+  .productListpage .product .productlist .cards .categorycard .info .text {
+    display: flex;
+  }
+  .productListpage .product .productlist .cards .categorycard .info .text .title {
+    overflow: hidden;
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .productListpage .product .productlist .cards .categorycard .info .text .sub {
+    font-size: 10px;
+    line-height: 11px;
+  }
+  .productListpage .product .productlist .cards .categorycard .info .price {
+    background-color: #F6F6F6;
+    font-size: 10px;
+    line-height: 11px;
+    padding: 8px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .productListpage .titlesection .emptydiv {
+    width: 5px;
+  }
+  .productListpage .titlesection .title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .productListpage .product {
+    height: 900px;
+    overflow: scroll;
+  }
+  .productListpage .product .filtersection {
+    width: 70%;
+    height: 50%;
+  }
+  .productListpage .product .productlist .heading {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .productListpage .product .productlist .heading .title {
+    font-size: 15px;
+  }
+  .productListpage .product .productlist .heading .filter .cat1, .productListpage .product .productlist .heading .filter .cat2 {
+    font-size: 15px;
+  }
+  .productListpage .product .productlist .cards .categorycard {
+    width: 46%;
+  }
+  .productListpage .product .productlist .cards .categorycard .info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .productListpage .product .productlist .cards .categorycard .info .price {
+    align-self: flex-start;
+  }
+  .productListpage .product .productlist .cards .categorycard .heart {
+    width: 19px;
+    height: 19px;
+    padding: 5px;
+  }
+  .productListpage .advertaisment .adContent .msgHead {
+    font-size: 15px;
+    line-height: normal;
+  }
+  .productListpage .advertaisment .adContent .msg {
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .productListpage .pricingtable .table .data .head .title, .productListpage .pricingtable .table .data .head .pricetitle {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 15px;
+  }
+  .productListpage .pricingtable .table .data .item .itemname, .productListpage .pricingtable .table .data .item .price {
+    padding: 10px;
+    font-size: 11px;
   }
 }/*# sourceMappingURL=productPage.css.map */

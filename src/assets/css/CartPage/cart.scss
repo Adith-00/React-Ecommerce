@@ -288,3 +288,364 @@
     }
     
 }
+
+@media screen and (max-width: 770px){
+   .cartpage{
+    .mid{
+        .heading{
+            .product{
+                width: 20%;
+            }
+            .others{
+                width: 15%;
+            }
+        }
+        .item{
+            .product{
+                flex-direction: column;
+                width: 20%;
+                .details{
+                    align-items: flex-start;
+
+                }
+            }
+            .price,.quantity,.shipping,.total,.delete{
+                width: 15%;
+            }
+        }
+       
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+        .billsection{
+            align-self: flex-end;
+        }
+    }
+   }
+}
+@media screen and (max-width: 680px){
+    .cartpage{
+        .mid{
+            .heading{
+                .product{
+                    font-size: 14px;
+                    min-width: 20%;
+                }
+                .others{
+                    font-size: 14px;
+                    min-width: 15%;
+                }
+            }
+            .item{
+                .product{
+                    gap: 10px;
+                    min-width: 20%;
+                    h2{
+                        width: 60px;
+                        height: 60px;
+                        img{
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                    .details{
+                        align-items: flex-start;
+                        .name{
+                            font-size: 12px;
+                            line-height: 16px;
+                        }
+                        .color,.size{
+                            font-size: 12px;
+                            line-height: 16px;
+                        }
+    
+                    }
+                }
+                .price,.quantity,.shipping,.total,.delete{
+                    min-width: 15%;
+                }
+            }
+           
+        }
+        .bottom{
+            flex-direction: column;
+            align-items: flex-start;
+            .billsection{
+                align-self: flex-end;
+            }
+        }
+    }
+  
+
+}
+@media screen and (max-width: 540px){
+    .cartpage{
+        .mid{
+            .heading{
+                .product{
+                    font-size: 14px;
+                    min-width: 20%;
+                }
+                .others{
+                    font-size: 14px;
+                    min-width: 15%;
+                }
+            }
+            .item{
+                .price,.quantity,.shipping,.total,.delete{
+                    min-width: 15%;
+                    font-size: 14px;
+                }
+            }
+           
+        }
+        .bottom{
+            flex-direction: column;
+            align-items: flex-start;
+            .discountSection{
+                gap: 30px;
+                .couponinput{
+                    width: 80%;
+                    input{
+                        width: 60%;
+                        height: 35px;
+                    }
+                    button{
+                        width: 40%;
+                        height: 35px;
+                        font-size: 12px;
+                    }
+                }
+                button{
+                    width: 50%;
+                    height: 35px;
+                    font-size: 12px;
+                }
+            }
+            .billsection{
+                gap: 30px;
+                align-self: flex-end;
+                .bill{
+                    .total,.shipping{
+                        font-size: 15px;
+                        line-height: 18px;
+                    }
+                    .Grandtotal{
+                        font-size: 20px;
+                        line-height: 22px;
+                    }
+                }
+                .chekoutbtn{
+                    width: 70%;
+                    height: 35px;
+                    font-size: 12px;
+                }
+                
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 460px){
+
+    .cartpage{
+        .top{
+            padding: 10px;
+        .path{
+            font-size: 14px;
+        }
+        .note{
+            font-size:13px;
+        }
+       
+        }
+        .mid{
+            .heading{
+                padding: 8px;
+                .product{
+                    font-size: 12px;
+                    min-width: 20%;
+                }
+                .others{
+                    font-size: 12px;
+                    min-width: 15%;
+                }
+            }
+            .item{
+                padding: 8px;
+                .product{
+                    gap: 10px;
+                    min-width: 20%;
+                    h2{
+                        width: 40px;
+                        height: 40px;
+                        img{
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                    .details{
+                        align-items: flex-start;
+                        .name{
+                            font-size: 11px;
+                            line-height: 12px;
+                        }
+                        .color,.size{
+                            font-size: 11px;
+                            line-height: 12px;
+                        }
+    
+                    }
+                }
+                .price,.quantity,.shipping,.total,.delete{
+                    min-width: 15%;
+                    font-size: 12px;
+                }
+            }
+           
+        }
+        .bottom{
+            flex-direction: column;
+            align-items: flex-start;
+            .discountSection{
+                .heading{
+                    .main{
+                        font-size: 15px;
+                        list-style: 17px;
+                    }
+                    .sub{
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+                .couponinput{
+                    button{
+                        font-size: 10px;
+                    }
+                }
+            }
+            .billsection{
+                align-self: flex-end;
+                .bill{
+                    .total,.shipping{
+                        font-size: 15px;
+                        line-height: 17px;
+                    }
+                    .Grandtotal{
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 380px){
+
+    .cartpage{
+        .top{
+            .path{
+                font-size: 11px;
+
+            }
+            .note{
+                font-size: 10px;
+                span{
+                    font-size: 10px;
+                }
+            }
+        }
+        .mid{
+            .heading{
+                padding: 5px;
+                .product{
+                    font-size: 9px;
+                }
+                .others{
+                    font-size: 9px;
+                }
+            }
+            .item{
+                padding: 5px;
+                .product{
+                    gap: 5px;
+                    h2{
+                        width: 35px;
+                        height: 35px;
+                    }
+                    .details{
+                        .name{
+                            font-size: 9px;
+                            line-height: 10px;
+                        }
+                        .color,.size{
+                            font-size: 9px;
+                            line-height: 10px;
+                        }
+                    }
+                    
+                }
+                .price,.quantity,.shipping,.total,.delete{
+                    font-size: 9px;
+                }
+                .delete{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    i{
+                        display: flex;
+                        width: 15px;
+                        height: 15px;
+                        img{
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom{
+            .discountSection{
+                gap: 8px;
+                .heading{
+                    .main{
+                        font-size: 13px;
+                        line-height: 14px;
+                    }
+                    .sub{
+                        font-size: 12px;
+                        line-height: 13px;
+                    }
+                }
+                .couponinput{
+                    button{
+                        font-size: 9px;
+                    }
+                }
+                button{
+                   
+                    font-size: 9px;
+                    height: 30px;
+                }
+            }
+            .billsection{
+                .bill{
+                    .total,.shipping{
+                        font-size: 13px;
+                        line-height: 14px;
+                    }
+                    .Grandtotal{
+                        font-size: 16px;
+                        line-height: 17px;
+                    }
+                    .chekoutbtn{
+                        font-size: 9px;
+                    }
+                
+                }
+            }
+        }
+    }
+}

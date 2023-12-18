@@ -11,7 +11,7 @@ const Checkout = () => {
   return (
     <div className="chekoutPage wrapper">
       <div className="chekoutSession">
-        <Heading headingTxt={"checkout"} />
+        <Heading headingTxt={"Checkout"} />
         <div className="billingdetails">
           <h2 className="heading">Billing Details</h2>
           <div className="inputs">

@@ -302,6 +302,7 @@
                     .options{
                         display: flex;
                         gap: 30px;
+                        flex-wrap: wrap;
 
                     }
                     .cardDetails{
@@ -560,5 +561,353 @@
         width: 100%;
     }
   }
+
+}
+@media screen and (max-width: 540px) {
+ .chekoutPage{
+    .chekoutSession{
+        .billingdetails{
+            .inputs{
+               .inputFeilds{
+                p{
+                    font-size: 13px;
+                    line-height: 17px;
+                }
+               
+               }
+            }
+            button{
+                font-size: 15px;
+                line-height: 16px;
+                width: 35%;
+                height: 35px;
+            }
+            .chekbox{
+                font-size: 15px;
+            }
+        }
+        .Shippingaddress{
+            .heading{
+                .main{
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                .sub{
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+            .selector{
+                p{
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+        .shippingDetails{
+            h2{
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .details{
+                .first{
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                .deliverycharge{
+                    .text{
+                        .main{
+                            font-size: 15px;
+                            line-height: 18px;
+
+                        }
+                        .sub{
+                            font-size: 13px;
+                            line-height: 16px;
+                        }
+                    }
+                    .price{
+                        font-size: 15px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+        .payment{
+           .heading{
+                h1{
+                    font-size: 18px;
+                    line-height: 22px
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 18px;
+               }
+           }  
+           .paymentOptions{
+              .creditCard{
+                    .heading{
+                        .optionHeading{
+                            .main{
+                                font-size: 16px;
+                                line-height: 18px;
+                            }
+                            .sub{
+                                font-size: 14px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                    .options{
+                        gap: 20px;
+                        i{
+                            width: 30%;
+                            height: 100%;
+                            display: flex;
+                            img{
+                                width: 100%;
+                                display:block;
+                            } 
+                        }
+                    }
+                }
+                .option2{
+                    .optionHeading{
+                        .main{
+                            font-size: 16px;
+                            line-height: 18px;
+                        }
+                        .sub{
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+                .option3{
+                    p{
+                            font-size: 16px;
+                            line-height: 18px; 
+                    }
+                }
+           }
+           
+        }
+        .paymetButton{
+            width: 35%;
+            height: 40px;
+            font-size: 13px;
+        }
+    }
+   
+ }
+    
+}
+@media screen and (max-width: 320px) {
+
+    .chekoutPage{
+        .titlesection{
+            .emptydiv{
+              width: 8px;
+            }  
+            .title{
+              font-size: 25px;
+            }
+          }
+        input{
+            &::placeholder{
+                font-size: 9px;
+            }
+        }
+        .chekoutSession{
+            .billingdetails{
+                .heading{
+                    font-size: 17px;
+                }
+                .inputs{
+                    .inputFeilds{
+                        p{
+                            font-size: 12px;
+                            line-height: 14px;
+                        }  
+                    }
+                }
+                button{
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+                .chekbox{
+                    font-size: 13px;
+                }
+            }
+            .Shippingaddress{
+                .heading{
+                    .main{
+                        font-size: 15px;
+                        line-height: 17px;
+                    }
+                    .sub{
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                }
+                .selector{
+                    p{
+                        font-size: 12px;
+                        line-height: 14px;
+                        padding: 10px;
+                    }
+                }
+            }
+            .shippingDetails{
+                h2{
+                    font-size: 15px;
+                    line-height: 17px;
+                }
+                .details{
+                    padding: 20px;
+                    .first{
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                    .deliverycharge{
+                        .text{
+                            .main{
+                                font-size: 12px;
+                                line-height: 14px;
+    
+                            }
+                            .sub{
+                                font-size: 11px;
+                                line-height: 14px;
+                            }
+                        }
+                        .price{
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+            }
+            .payment{
+                .heading{
+                     h1{
+                         font-size: 15px;
+                         line-height: 17px
+                     }
+                     p{
+                         font-size: 12px;
+                         line-height: 14px;
+                    }
+                }  
+                .paymentOptions{
+                    padding: 10px;
+                   .creditCard{
+                         .heading{
+                             .optionHeading{
+                                 .main{
+                                     font-size: 13px;
+                                     line-height: 15px;
+                                 }
+                                 .sub{
+                                     font-size: 12px;
+                                     line-height: 14px;
+                                 }
+                             }
+                         }
+                         .cardDetails{
+                            input{
+                                width: 100%;
+                            }
+                         }
+                     }
+                     .option2{
+                         .optionHeading{
+                             .main{
+                                 font-size: 13px;
+                                 line-height: 15px;
+                             }
+                             .sub{
+                                 font-size: 12px;
+                                 line-height: 14px;
+                             }
+                         }
+                     }
+                     .option3{
+                         p{
+                                 font-size: 13px;
+                                 line-height: 15px; 
+                         }
+                     }
+                }
+                
+             }
+             .paymetButton{
+                width: 35%;
+                height: 40px;
+                font-size: 9px;
+            }
+
+        }
+        .productSummary{
+            padding: 10px;
+            h1{
+                font-size: 20px;
+            }
+            .oderitems{
+                .item{
+                    flex-direction: column;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+                    .product{
+                        gap: 12px;
+                        .details{
+                            p{
+                                font-size: 10px;
+                                line-height: 12px;
+                                span{
+                                    font-size: 10px;
+                                    line-height: 12px; 
+                                }
+                            }
+                        
+                        }
+                    }
+                    .rate{
+                        align-self: flex-end;
+                        font-size: 10px;
+                    }
+                }
+            }
+            .billsummary{
+                gap: 10px;
+                .primarybill{
+                    border-bottom: none;
+                    border-top: none;
+                    padding: 15px;
+                    p{
+                        font-size: 13px;
+                        line-height: 14px;
+                        span{
+                            font-size: 13px;
+                            line-height: 14px;
+                        }
+    
+                    }
+                }
+                .shipping{
+                    font-size: 13px;
+                    line-height: 15px;
+                    padding: 15px;
+                    border-top: 1px solid #3c424249;
+                }
+                .TotalBill{
+                    font-size: 13px;
+                    line-height: 15px;
+                    padding: 15px;
+                }
+               
+            }
+            
+        }
+    }
 
 }

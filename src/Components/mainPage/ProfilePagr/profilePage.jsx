@@ -38,10 +38,10 @@ const Profile = ()=>{
                     </div>
                 </div>
                 <div className="content">
-                    {/* <UserInfo/> */}
+                    <UserInfo/>
                     {/* <AddressEdit/> */}
                    {/* <Wishlist/> */}
-                   <OderPage/>
+                   {/* <OderPage/> */}
                 </div>
             </div>
         </div>

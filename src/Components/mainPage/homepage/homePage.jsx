@@ -45,13 +45,13 @@ const HomePage = () => {
             {data &&
               data?.map((item, index) => {
                 const { id, category } = item;
-                return index < 6 ? (
+                return index < 6 && (
                   <NewArrivalCard
                     key={id}
                     itemName={category}
                     cardimage={image?.men2}
                   />
-                ) : null;
+                ) ;
               })}
           </div>
         </div>

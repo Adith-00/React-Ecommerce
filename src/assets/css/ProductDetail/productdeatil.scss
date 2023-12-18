@@ -40,6 +40,9 @@
             .path{
                 display: flex;
                 padding-top: 10px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
                 
                 p{
                     font-size: 18px;
@@ -414,7 +417,7 @@
         }
     }
 }
-@media screen and (max-width: 1054px){
+@media screen and (max-width: 1118px){
     .Productdetailpage{
         .oderingSection{
             width: 100%;
@@ -450,8 +453,8 @@
         }
     }
 }
- 
-@media screen and (max-width: 640px){
+
+@media screen and (max-width: 880px){
 
     .Productdetailpage{
         .oderingSection{
@@ -462,13 +465,15 @@
            .produtImages{
             flex-direction: row;
             position: absolute;
-             top: 55%;
+             top: 15%;
             left: 6%;
             width: fit-content;
             height: fit-content;
            }
            .imageviewer{
-            width: 100%;
+            width: 60%;
+            display: flex;
+            align-self: center;
                img{
                  width: 100%;
                }
@@ -484,3 +489,345 @@
     }
 
 }
+
+@media screen and (max-width: 540px){
+ 
+    .Productdetailpage{
+        .titlesection{
+            .emptydiv{
+              width: 8px;
+            }  
+            .title{
+              font-size: 25px;
+            }
+          }
+        .oderingSection{
+            .productDetails{
+                gap: 25px;
+                .cartOptions{
+                    button{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+        .ProductDescription{
+            .details{
+                .grid{
+                    .itm1{
+                        .propertytype{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .video{
+                width: 90%;
+                img{
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+        .Products{
+            .cards{
+                .categorycard{
+                    width: 40%;
+                    .cardimage{
+                        width: 100%;
+                        height: fit-content;
+                        img{
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                    .info{
+                        .text{
+                            gap: 6px;
+                            .title{
+                                font-size: 13px;
+                                line-height: normal;
+                            }
+                            .sub{
+                                font-size: 11px;
+                                line-height: normal;
+                            }
+                        }
+                        .price{
+                            padding: 10px;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px){
+ 
+    .Productdetailpage{
+        .titlesection{
+            .emptydiv{
+              width: 8px;
+            }  
+            .title{
+              font-size: 23px;
+            }
+          }
+        .oderingSection{
+            .produtImages{
+                left: 3%;
+                height: 40px;
+                width: 40px;
+            }
+            .imageviewer{
+                width: 70%;
+            }
+            .productDetails{
+                gap: 25px;
+                h1{
+                    font-size: 27px;
+                }
+            }
+        }
+        .ProductDescription{
+            .details{
+                .description{
+                    .heading{
+                        p{
+                            font-size: 13px;
+                        }   
+                    }
+                    .info{
+                        p{
+                            font-size: 12px;
+                            line-height: 13px;
+                        }
+                    }
+                }
+                .grid{
+                    .itm1{
+                        padding: 10px;
+                        .property{
+                            font-size: 12px;
+                        }
+                        .propertytype{
+                            font-size: 12px;
+                            line-height: 13px;
+                        }
+                    }
+                }
+            }
+            .video{
+                width: 90%;
+                img{
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+        .Products{
+            .cards{
+                .categorycard{
+                    width: 40%;
+                    .cardimage{
+                        border-radius: 8px;
+                    }
+                    .info{
+                        flex-direction: column;
+                        gap: 5px;
+                        align-items: flex-start;
+                        .text{
+                            gap: 6px;
+                            .title{
+                                font-size: 13px;
+                                line-height: normal;
+                            }
+                            .sub{
+                                font-size: 11px;
+                                line-height: normal;
+                            }
+                        }
+                        .price{
+                            padding: 5px;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 360px){
+ 
+    .Productdetailpage{
+        .titlesection{
+            .emptydiv{
+              width: 6px;
+            }  
+            .title{
+              font-size: 18px;
+            }
+          }
+        
+        .oderingSection{
+            .imageviewer{
+                width: 100%;
+            }
+            .produtImages{
+                top: 35%;
+                left: 6%;
+            }
+            .productDetails{
+                .path{
+                    p{
+                        font-size: 12px;
+                    }
+                }
+                .rating{
+                    flex-direction: column;
+                    gap: 8px;
+                    .comments{
+                        p{
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .Sizeselector{
+                    gap: 10px;
+                    .heading{
+                        .main{
+                            font-size: 14px;
+                        }
+                        .sub{
+                            display: flex;
+                            font-size: 13px;
+                            align-items: center;
+                            gap: 5px;
+                            i{
+                                width: 10px;
+                                height: 10px;
+                                img{
+                                    width: 100%;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    .sizetile{
+                        button{
+                            width: 30px;
+                            height: 30px;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .colorSelector{
+                    gap: 10px;
+                    .heading{
+                        font-size: 14px;
+                    }
+                    .colortile{
+                        i{
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+                .cartOptions{
+                    button{
+                        font-size: 12px;
+                        width: 100px;
+                        height: 40px;
+                        gap: 4px;
+                        span{
+                            width: 10px;
+                            height: 10px;
+                            img{
+                                width: 100%;
+                                display: block;
+                            }
+                        }
+                    }
+                    .price{
+                        font-size: 12px;
+                        width: 100px;
+                        height: 40px;
+                    }
+                }
+                .services{
+                    .item{
+                        i{
+                            width: 20px;
+                            height: 20px;
+                            padding: 5px;
+                        }
+                        p{
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+        .ProductDescription{
+            .details{
+                .description{
+                    .heading{
+                        gap: 7px;
+                        p{
+                            font-size: 10px;
+                        }
+                    }
+                    .info{
+                        p{
+                            font-size: 10px;
+                            line-height: 10px;
+                        }
+                    }
+                }
+                .grid{
+                    padding: 10px;
+                    .itm1{
+                        padding: 8px;
+                        .property{
+                            font-size: 10px;
+                            line-height: 11px;
+                        }
+                        .propertytype{
+                            font-size: 10px;
+                            line-height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    .Products{
+        .cards{
+            gap: 10px;
+            .categorycard{
+                width: 46%;
+                .info{
+                    .text{
+                        .title{
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .heart{
+                    width: 20px;
+                    height: 20px;
+                    padding: 5px;
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    }
+}
+ 

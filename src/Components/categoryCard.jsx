@@ -3,10 +3,9 @@ import { Heart,nextArrow, } from "../assets/images/images";
 import { useNavigate } from "react-router-dom";
 import { DataContext } from "../router/router";
 import { useContext } from "react";
+
 const CategoryCard=({image,itemname,price,path,id})=>{
-
     const{setProductId}=useContext(DataContext);
-
     const navigate = useNavigate()
     const navigateFun =()=>{
         navigate(path)

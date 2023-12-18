@@ -271,6 +271,7 @@
 .chekoutPage .chekoutSession .payment .paymentOptions .creditCard .options {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .chekoutPage .chekoutSession .payment .paymentOptions .creditCard .cardDetails {
   display: flex;
@@ -483,5 +484,252 @@
   }
   .chekoutPage .productSummary {
     width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds p {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .chekoutPage .chekoutSession .billingdetails button {
+    font-size: 15px;
+    line-height: 16px;
+    width: 35%;
+    height: 35px;
+  }
+  .chekoutPage .chekoutSession .billingdetails .chekbox {
+    font-size: 15px;
+  }
+  .chekoutPage .chekoutSession .Shippingaddress .heading .main {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .chekoutPage .chekoutSession .Shippingaddress .heading .sub {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .chekoutPage .chekoutSession .Shippingaddress .selector p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .chekoutPage .chekoutSession .shippingDetails h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .chekoutPage .chekoutSession .shippingDetails .details .first {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .chekoutPage .chekoutSession .shippingDetails .details .deliverycharge .text .main {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .chekoutPage .chekoutSession .shippingDetails .details .deliverycharge .text .sub {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .chekoutPage .chekoutSession .shippingDetails .details .deliverycharge .price {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .chekoutPage .chekoutSession .payment .heading h1 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .chekoutPage .chekoutSession .payment .heading p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions .creditCard .heading .optionHeading .main {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions .creditCard .heading .optionHeading .sub {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions .creditCard .options {
+    gap: 20px;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions .creditCard .options i {
+    width: 30%;
+    height: 100%;
+    display: flex;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions .creditCard .options i img {
+    width: 100%;
+    display: block;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions .option2 .optionHeading .main {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions .option2 .optionHeading .sub {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions .option3 p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .chekoutPage .chekoutSession .paymetButton {
+    width: 35%;
+    height: 40px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .chekoutPage .titlesection .emptydiv {
+    width: 8px;
+  }
+  .chekoutPage .titlesection .title {
+    font-size: 25px;
+  }
+  .chekoutPage input::-moz-placeholder {
+    font-size: 9px;
+  }
+  .chekoutPage input::placeholder {
+    font-size: 9px;
+  }
+  .chekoutPage .chekoutSession .billingdetails .heading {
+    font-size: 17px;
+  }
+  .chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .chekoutPage .chekoutSession .billingdetails button {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .chekoutPage .chekoutSession .billingdetails .chekbox {
+    font-size: 13px;
+  }
+  .chekoutPage .chekoutSession .Shippingaddress .heading .main {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .chekoutPage .chekoutSession .Shippingaddress .heading .sub {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .chekoutPage .chekoutSession .Shippingaddress .selector p {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 10px;
+  }
+  .chekoutPage .chekoutSession .shippingDetails h2 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .chekoutPage .chekoutSession .shippingDetails .details {
+    padding: 20px;
+  }
+  .chekoutPage .chekoutSession .shippingDetails .details .first {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .chekoutPage .chekoutSession .shippingDetails .details .deliverycharge .text .main {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .chekoutPage .chekoutSession .shippingDetails .details .deliverycharge .text .sub {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .chekoutPage .chekoutSession .shippingDetails .details .deliverycharge .price {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .chekoutPage .chekoutSession .payment .heading h1 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .chekoutPage .chekoutSession .payment .heading p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions {
+    padding: 10px;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions .creditCard .heading .optionHeading .main {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions .creditCard .heading .optionHeading .sub {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions .creditCard .cardDetails input {
+    width: 100%;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions .option2 .optionHeading .main {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions .option2 .optionHeading .sub {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .chekoutPage .chekoutSession .payment .paymentOptions .option3 p {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .chekoutPage .chekoutSession .paymetButton {
+    width: 35%;
+    height: 40px;
+    font-size: 9px;
+  }
+  .chekoutPage .productSummary {
+    padding: 10px;
+  }
+  .chekoutPage .productSummary h1 {
+    font-size: 20px;
+  }
+  .chekoutPage .productSummary .oderitems .item {
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+  }
+  .chekoutPage .productSummary .oderitems .item .product {
+    gap: 12px;
+  }
+  .chekoutPage .productSummary .oderitems .item .product .details p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .chekoutPage .productSummary .oderitems .item .product .details p span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .chekoutPage .productSummary .oderitems .item .rate {
+    align-self: flex-end;
+    font-size: 10px;
+  }
+  .chekoutPage .productSummary .billsummary {
+    gap: 10px;
+  }
+  .chekoutPage .productSummary .billsummary .primarybill {
+    border-bottom: none;
+    border-top: none;
+    padding: 15px;
+  }
+  .chekoutPage .productSummary .billsummary .primarybill p {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .chekoutPage .productSummary .billsummary .primarybill p span {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .chekoutPage .productSummary .billsummary .shipping {
+    font-size: 13px;
+    line-height: 15px;
+    padding: 15px;
+    border-top: 1px solid rgba(60, 66, 66, 0.2862745098);
+  }
+  .chekoutPage .productSummary .billsummary .TotalBill {
+    font-size: 13px;
+    line-height: 15px;
+    padding: 15px;
   }
 }/*# sourceMappingURL=chekout.css.map */

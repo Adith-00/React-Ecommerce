@@ -29,6 +29,27 @@ const AddressEdit = () => {
                     })}
                   </select>
                 )}
+                {/* {() => {
+                  switch (type) {
+                    case "dropdown":
+                      return (
+                        <select placeholder={placeholder} className={Style}>
+                          <option>--Select An Item --</option>
+                          {Options.map((item) => (
+                            <option key={item}>{item}</option>
+                          ))}
+                        </select>
+                      );
+                    default:
+                      return (
+                        <InputBox
+                          placeholder={placeholder}
+                          type={type}
+                          style={Style}
+                        />
+                      );
+                  }
+                }} */}
               </div>
             );
           })}
