@@ -5,6 +5,7 @@ import { EmptyCart, cartimg, deleteIcon, nxtarrow } from "../../../assets/images
 import "../../../assets/css/CartPage/cart.css"
 import MsgPage from "../MsgPage/msgContainer";
 import { DataContext } from "../../../router/router";
+import CartItem from "./cartItem";
 const CartPage =()=>{
 
  const{cart,setCart}=useContext(DataContext)
@@ -23,28 +24,9 @@ const CartPage =()=>{
                 <p className="others">Subtotal</p>
                 <p className="others">Action</p>
             </div>
-            <div className="item ">
-                        <div className="product">
-                            <h2><img src={cartimg} alt="product" /></h2>
-                            <div className="details">
-                                <p className="name">sample name</p>
-                                <p className="color">Color : Yellow</p>
-                                <p className="size">Size : M</p>
-                            </div>
-                        </div>
-                        <p className="price">344</p>
-                        <div className="quantity">
-                            <Button buttontxt="-"/>
-                            <p>1</p>
-                            <Button buttontxt="+"/>
-                        </div>
-                        <p className="shipping">Free</p>
-                        <p className="total">344</p>
-                        <span className="delete"><i><img src={deleteIcon} alt="delete" /></i></span> 
-                    </div>
             {cart&&cart.map((item)=>{
                 const{itemName,itemPrice}=item
-                return
+                return <CartItem itemName={itemName}price={itemPrice}/>
             })}
             
         </div>

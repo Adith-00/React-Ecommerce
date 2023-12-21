@@ -36,7 +36,7 @@ const Router = () => {
     SavingcardData(data2, setData2);
     FeedbackData(feedback, setFeedback);
   }, []);
-  console.log("auth>>>>>",auths);
+  console.log("auth>>>>>",cart);
   return (
     <div className="test">
       <BrowserRouter>

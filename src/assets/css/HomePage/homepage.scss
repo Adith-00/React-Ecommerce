@@ -1406,6 +1406,28 @@
             }
         }
     }
+    .poster{
+        .info{
+            width: 119px;
+            top: 4%;
+            left: 2%;
+            gap: 9px;
+            .top{
+                font-size: 10px;
+                line-height: normal;
+            }
+            .bottom{
+                font-size: 8px;
+                line-height: normal;
+            }
+            button{
+                width: 80px;
+                height: 20px;
+                font-size: 8px;
+            }
+            
+        }
+    }
     .category{
         .cardsection{
             .categorycard{
