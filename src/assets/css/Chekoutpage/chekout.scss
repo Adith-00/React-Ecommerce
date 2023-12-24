@@ -472,6 +472,8 @@
                     line-height: 17px;
                     letter-spacing: 0.02em;
                     text-align: left;
+                    display: flex;
+                    justify-content: space-between;
 
                     span {
                         font-size: 18px;
@@ -493,6 +495,8 @@
                 border-bottom: 1px solid #3c424249;
                 padding: 30px;
                 color: #3C4242;
+                display: flex;
+                justify-content: space-between;
             }
 
             .TotalBill {
@@ -503,6 +507,9 @@
                 text-align: left;
                 padding: 30px;
                 color: #3C4242;
+                display: flex;
+                justify-content: space-between;
+
             }
         }
     }

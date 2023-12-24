@@ -1,13 +1,59 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import InputBox from "../../input";
 import Button from "../../button";
 import Heading from "../heading";
 import { gpaylogo, paypal, paypass, smallProductImage, visalogo } from "../../../assets/images/images";
 import "../../../assets/css/Chekoutpage/chekout.css";
 import { Chek_outfeilds, carddetailInput } from "../../../assets/const/consts";
+import { useSelector } from "react-redux";
+import ChekoutItem from "./chekoutItem";
 
 const Checkout = () => {
+  const[setprice,setTotalprice]=useState('')
   const paymentlogos = [gpaylogo,visalogo,paypal,paypass]
+  const products = useSelector((state) => state.Cart.value)
+  useEffect(() => {
+    price();
+  }, [products]);
+  const price =()=>{
+    let price =0
+   {products?.map((item)=>{
+       let ItemPrice =Number(item.itemPrice.replace('$',"")) 
+       return price = ItemPrice + price
+   })}
+   setTotalprice(price)
+ }
+ const paymentFunc = (e)=>{
+  e.preventDefault();
+  if(setprice === ""){
+ alert("please enter amount ");
+  }else{
+    var options = {
+      key: "rzp_test_3q8zMI1AhpfPBL",
+      key_secret:"MWtW4zgLnqdaTq3f2QmnU3QA",
+      amount: setprice*100,
+      currency:"USD",
+      name:"Euphoria",
+      description:"for testing purpose",
+      handler: function(response){
+        alert(response.razorpay_payment_id);
+      },
+      prefill: {
+        name:"Adith",
+        email:"kaadith092@gmail.com",
+        contact:"7590902245"
+      },
+      notes:{
+        address:"Razorpay Corporate office"
+      },
+      theme: {
+        color:"#7833cc"
+      }
+    };
+    var pay = new window.Razorpay(options);
+    pay.open();
+  }
+}
   return (
     <div className="chekoutPage wrapper">
       <div className="chekoutSession">
@@ -85,7 +131,7 @@ const Checkout = () => {
             <h1>Payment Method</h1>
             <p>All transactions are secure and encrypted.</p>
           </div>
-          <div className="paymentOptions">
+          <form className="paymentOptions">
             <div className="creditCard">
               <div className="heading">
                 <InputBox type={"radio"} />
@@ -120,35 +166,26 @@ const Checkout = () => {
               <InputBox type={"radio"} />
               <p>Paypal</p>
             </div>
-          </div>
-          <Button style={"paymetButton"} buttontxt={"Pay Now"} />
+          </form>
+          <Button style={"paymetButton"} buttontxt={"Pay Now"} btnfun={paymentFunc} />
         </div>
       </div>
       <div className="productSummary">
         <h1>Oder Summary</h1>
         <div className="oderitems">
-          <div className="item">
-            <div className="product">
-              <h2 className="productimage">
-                <img src={smallProductImage} alt="product" />
-              </h2>
-              <div className="details">
-                <p>Blue Flower Print Crop Top x 1</p>
-                <p>
-                  Color : <span> Yellow</span>
-                </p>
-              </div>
-            </div>
-            <p className="rate">$250</p>
-          </div>
+          {products&&products.map((item)=>{
+          const{itemName,itemPrice}=item
+          return <ChekoutItem productName={itemName} price={itemPrice}/>
+         
+          })}
         </div>
         <div className="billsummary">
           <div className="primarybill">
-            <p>Sub Totoal</p>
+            <p>Sub Totoal <span>${setprice}</span></p>
             <p>Savings</p>
           </div>
-          <p className="shipping">Shipping</p>
-          <p className="TotalBill"> Total </p>
+          <p className="shipping">Shipping <span>$5</span></p>
+          <p className="TotalBill"> Total <span>${setprice+5}</span> </p>
         </div>
       </div>
     </div>

@@ -44,4 +44,33 @@
   background-color: #8A33FD;
   color: white;
   cursor: pointer;
+}
+
+@media screen and (max-width: 570px) {
+  .msgpage {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+  .msgpage .msgcontent {
+    width: 80%;
+  }
+  .msgpage .msgcontent .msgimage {
+    width: 100%;
+  }
+  .msgpage .msgcontent .msgimage img {
+    width: 100%;
+    display: block;
+  }
+  .msgpage .msgcontent .msg h1 {
+    font-size: 20px;
+  }
+  .msgpage .msgcontent .msg p {
+    font-size: 15px;
+  }
+  .msgpage .msgcontent button {
+    width: 50%;
+    height: 35px;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=msg.css.map */

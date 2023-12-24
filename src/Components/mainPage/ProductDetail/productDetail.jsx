@@ -17,8 +17,13 @@ import {
   whitecart,
 } from "../../../assets/images/images";
 import { DataContext } from "../../../router/router";
+import { addItem } from "../../../redux/cartSlice";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const ProductDetailpage = () => {
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
    const [items,setItem]=useState()
    const{productId,data,cart,setCart}=useContext(DataContext);
   const service = [
@@ -31,9 +36,9 @@ const ProductDetailpage = () => {
     return  productId===item?.id ? (setItem(item)):null
   })},[productId])
   const AddtoCart =()=>{
-      {cart? setCart(...cart,items):
-        setCart(items)
-      }
+      dispatch(addItem(items))
+      navigate('/cart')
+
   }
   console.log("cart",cart)
   console.log("><><><>>M",items)

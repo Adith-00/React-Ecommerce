@@ -9,7 +9,7 @@ import "../../../assets/css/Mainheader/mainHeader.css"
 const MainHeader=()=>{
     const location = useLocation();
     const navigate =useNavigate()
-    const logoimage =[{option:"Profile",image:user},{option:"Cart",image:cart},{option:"Wishlist",image:Heart}]
+    const logoimage =[{option:"Profile",image:user},{option:"Cart",image:cart,},{option:"Wishlist",image:Heart}]
     const  navlist =["Shop","Men","Women","Combos","Joggers"]
     
     return location.pathname !== "/"&&location.pathname !== "/signup"?(

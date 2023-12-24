@@ -12,6 +12,8 @@ import "../../assets/css/sign_in.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import ErrorDialog from "./errordailoge";
+import {  useDispatch } from 'react-redux'
+import { isAuthenticated,isNotAuthenticated } from "../../redux/authSlice";
 
 const SignInpage = () => {
   const {
@@ -23,9 +25,10 @@ const SignInpage = () => {
     setMailerror,
     passerror,
     setPasserror,
-    auths,
-    setAuth
+    // auths,
+    // setAuth
   } = useContext(DataContext);
+  const dispatch = useDispatch()
   const [error, setError] = useState("");
   const [vibility,setVisibility] =useState("visibility_off");
   const navigate = useNavigate();
@@ -47,13 +50,13 @@ const SignInpage = () => {
         const user = userCredential.user;
         navigate("/home");
         console.log(user);
-        setAuth(true)
+        dispatch(isAuthenticated())
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         setError(errorCode);
-        setAuth(false)
+        // dispatch(isNotAuthenticated)
         console.log(errorCode, errorMessage);
       });
   };

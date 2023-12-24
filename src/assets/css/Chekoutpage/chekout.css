@@ -415,6 +415,8 @@
   line-height: 17px;
   letter-spacing: 0.02em;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 .chekoutPage .productSummary .billsummary .primarybill p span {
   font-size: 18px;
@@ -432,6 +434,8 @@
   border-bottom: 1px solid rgba(60, 66, 66, 0.2862745098);
   padding: 30px;
   color: #3C4242;
+  display: flex;
+  justify-content: space-between;
 }
 .chekoutPage .productSummary .billsummary .TotalBill {
   font-size: 18px;
@@ -441,6 +445,8 @@
   text-align: left;
   padding: 30px;
   color: #3C4242;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1280px) {

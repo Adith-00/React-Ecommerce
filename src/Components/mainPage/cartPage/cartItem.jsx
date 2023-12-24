@@ -1,7 +1,13 @@
 import React from "react";
 import Button from "../../button";
 import { cartimg, deleteIcon } from "../../../assets/images/images";
-const CartItem = ({itemName,price}) => {
+import { useDispatch } from "react-redux";
+import { removeItem } from "../../../redux/cartSlice";
+const CartItem = ({itemName,price,index}) => {
+  const dispatch =useDispatch()
+  const dltitem=()=>{
+     dispatch(removeItem(index))
+  }
   return (
     <div className="item ">
       <div className="product">
@@ -24,7 +30,7 @@ const CartItem = ({itemName,price}) => {
       <p className="total">{price}</p>
       <span className="delete">
         <i>
-          <img src={deleteIcon} alt="delete" />
+          <img src={deleteIcon} alt="delete"onClick={dltitem} />
         </i>
       </span>
     </div>

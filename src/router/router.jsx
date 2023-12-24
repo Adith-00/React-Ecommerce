@@ -18,6 +18,9 @@ import MsgPage from "../Components/mainPage/MsgPage/msgContainer";
 import { errimg } from "../assets/images/images";
 import Profile from "../Components/mainPage/ProfilePagr/profilePage";
 import Checkout from "../Components/mainPage/ChekOutPage/chekout";
+import { store } from "../redux/store";
+import { useSelector } from "react-redux";
+import { Provider } from "react-redux";
 
 export const DataContext = createContext()
 const Router = () => {
@@ -29,8 +32,9 @@ const Router = () => {
   const [emailerror,setMailerror] =useState('');
   const [passerror ,setPasserror] =useState('');
   const [productId ,setProductId]=useState('')
-  const [cart,setCart]=useState([])
-  const [auths ,setAuth]=useState(true)
+  // const [cart,setCart]=useState([])
+  // const [auths ,setAuth]=useState(true)
+  const auths = useSelector((state) => state.Auth.value)
   useEffect(() => {
     FetchData(data, setData);
     SavingcardData(data2, setData2);
@@ -40,7 +44,7 @@ const Router = () => {
   return (
     <div className="test">
       <BrowserRouter>
-      <DataContext.Provider value={{ data, data2, feedback,email,setEmail,pass,setPass,emailerror,setMailerror,passerror ,setPasserror,auths,setAuth,productId,setProductId,cart,setCart}}>
+      <DataContext.Provider value={{ data, data2, feedback,email,setEmail,pass,setPass,emailerror,setMailerror,passerror ,setPasserror,productId,setProductId,cart,setCart}}>
         <MainHeader />
             <Routes>
             <Route path="/" element={<SignInpage />} />

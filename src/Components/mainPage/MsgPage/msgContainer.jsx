@@ -1,7 +1,12 @@
 import React from "react";
 import Button from "../../button";
 import "../../../assets/css/msgPage/msg.css"
-const MsgPage=({msgimg,msg,submsg,buttontext})=>{
+import { useNavigate } from "react-router-dom";
+const MsgPage=({msgimg,msg,submsg,buttontext,path})=>{
+    const navigate = useNavigate()
+    const buttonFunction=()=>{
+        navigate(path)
+    }
     return(
         <div className="msgpage">
             <div className="msgcontent">
@@ -12,7 +17,7 @@ const MsgPage=({msgimg,msg,submsg,buttontext})=>{
                     <h1>{msg}</h1>
                     <p>{submsg}</p>
                 </div>
-                <Button buttontxt={buttontext}/>
+                <Button buttontxt={buttontext} btnfun={buttonFunction}/>
             </div>
         </div>
     )

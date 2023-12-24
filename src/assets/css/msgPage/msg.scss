@@ -50,3 +50,35 @@
     }
     
 }
+    @media screen and (max-width: 570px){
+
+        .msgpage{
+            height: fit-content;
+            padding-bottom: 20px;
+            .msgcontent{
+                width: 80%;
+                .msgimage{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                .msg{
+                    h1{
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+                button{
+                    width: 50%;
+                    height: 35px;
+                    font-size: 14px;
+                }
+            }
+           
+        }
+
+    }
