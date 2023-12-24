@@ -3,14 +3,19 @@ import Button from "../../button";
 import InputBox from "../../input";
 import { nxtarrow, filterIcon, slider } from "../../../assets/images/images";
 import { Items, Styles, colors, size } from "../../../assets/const/consts";
+import { useDispatch } from "react-redux";
+import { setColor, setMaxprice, setMinprice, setSize } from "../../../redux/filterSlice";
 const FilterSection = () => {
-  const [min,setMin]=useState('')
-  const [max,setMax]=useState('')
+  const [min,setMin]=useState(50)
+  const [max,setMax]=useState(100)
+  const dispatch = useDispatch()
   const minValue =(e)=>{
     setMin(e.target.value)
+    dispatch(setMinprice(min))
   }
   const maxvalue=(e)=>{
     setMax(e.target.value)
+    dispatch(setMaxprice(max))
   }
   return (
     <div className="filtersection">
@@ -43,8 +48,8 @@ const FilterSection = () => {
         </div>
         <div className="pricefilter">
           <div className="slider">
-              <InputBox type={"range"} min={"0"} max={"100"} style={"minslider"}onChange={minValue}/>
-              <InputBox type={"range"} min={"0"} max={"100"} style={"maxslider"} onChange={maxvalue}/>
+              <InputBox type={"range"} min={"0"} max={"600"} value={min} style={"minslider"}onChange={minValue}/>
+              <InputBox type={"range"} min={"0"} max={"2000"} value={max} style={"maxslider"} onChange={maxvalue}/>
           </div>
         
           <div className="priceindicator">
@@ -65,7 +70,7 @@ const FilterSection = () => {
             colors.map((item) => {
               return (
                 <div className="tile">
-                  <i className="color" style={{ backgroundColor: item }}></i>
+                  <i className="color" style={{ backgroundColor: item }} onClick={()=>{dispatch(setColor(item))}}></i>
                   <p className="colorname">{item}</p>
                 </div>
               );
@@ -81,7 +86,7 @@ const FilterSection = () => {
         </div>
         <div className="sizetile">
           {size.map((item) => {
-            return <Button buttontxt={item} />;
+            return <Button buttontxt={item} btnfun={()=>{dispatch(setSize(item))}} />;
           })}
         </div>
       </div>

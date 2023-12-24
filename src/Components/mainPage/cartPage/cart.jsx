@@ -30,6 +30,9 @@ const CartPage = () => {
   const checkout = () => {
     navigate("/checkout");
   };
+  const continueShopping=()=>{
+    // navigate('/details');
+  }
 
   return (
     <div className="cartpage">
@@ -47,7 +50,7 @@ const CartPage = () => {
           Already registered? <span> Please login here </span>{" "}
         </p>
       </div>
-      {cart.length? (
+      {cart.length>0? (
         <>
           <div className="mid">
             <div className="heading">
@@ -80,7 +83,7 @@ const CartPage = () => {
                 <InputBox />
                 <Button buttontxt="Apply Coupon" />
               </div>
-              <Button buttontxt="Continue Shopping" />
+              <Button buttontxt="Continue Shopping" btnfun={()=>{ navigate('/details')}} />
             </div>
             <div className="billsection  ">
               <div className="bill">

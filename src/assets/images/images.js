@@ -47,6 +47,7 @@ import rating from "./Frame 260 (1).png"
 import user from "./user.svg"
 import cart from "./cart.svg"
 import Heart from "./heart.svg"
+import LikedHeart from "./likedHeart.svg"
 import Logo from "./logo.svg"
 import footerlogo1 from "./Vector.png"
 import footerlogo2 from "./Vector (1).png"
@@ -82,6 +83,7 @@ export {
     user,
     shipping,
     whitecart,
+    LikedHeart,
     gpaylogo,
     EmptyCart,
     visalogo,

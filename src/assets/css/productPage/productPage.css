@@ -97,6 +97,9 @@
 }
 .productListpage .product .filtersection .pricesection .pricefilter .priceindicator {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 .productListpage .product .filtersection .pricesection .pricefilter .priceindicator .indicator {
@@ -244,11 +247,9 @@
 .productListpage .product .productlist {
   display: flex;
   width: 80%;
-  height: -moz-fit-content;
-  height: fit-content;
   padding: 50px;
+  gap: 50px;
   flex-direction: column;
-  gap: 30px;
 }
 .productListpage .product .productlist .heading {
   display: flex;
@@ -290,7 +291,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-self: center;
   align-items: center;
+  justify-self: center;
   gap: 20px;
 }
 .productListpage .product .productlist .cards .categorycard {
@@ -318,7 +321,7 @@
   flex-direction: column;
 }
 .productListpage .product .productlist .cards .categorycard .info .text .title {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 28px;
   letter-spacing: -0.04em;
@@ -620,6 +623,9 @@
   }
   .productListpage .product .filtersection {
     top: 2%;
+  }
+  .productListpage .product .filtersection .pricesection .pricefilter {
+    padding: 10px;
   }
   .productListpage .product .productlist {
     padding: 20px;

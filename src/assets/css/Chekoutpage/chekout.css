@@ -29,7 +29,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  max-width: 700px;
+  max-width: 90%;
 }
 .chekoutPage .chekoutSession .billingdetails .inputs .inputFeilds {
   display: flex;

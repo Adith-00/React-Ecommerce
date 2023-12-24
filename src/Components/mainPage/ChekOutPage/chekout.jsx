@@ -28,7 +28,7 @@ const Checkout = () => {
   if(setprice === ""){
  alert("please enter amount ");
   }else{
-    var options = {
+    let options = {
       key: "rzp_test_3q8zMI1AhpfPBL",
       key_secret:"MWtW4zgLnqdaTq3f2QmnU3QA",
       amount: setprice*100,
@@ -36,7 +36,7 @@ const Checkout = () => {
       name:"Euphoria",
       description:"for testing purpose",
       handler: function(response){
-        alert(response.razorpay_payment_id);
+        console.log(response.razorpay_payment_id);
       },
       prefill: {
         name:"Adith",
@@ -50,7 +50,7 @@ const Checkout = () => {
         color:"#7833cc"
       }
     };
-    var pay = new window.Razorpay(options);
+    let pay = new window.Razorpay(options);
     pay.open();
   }
 }

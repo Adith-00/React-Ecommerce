@@ -33,15 +33,14 @@ const ProductDetailpage = () => {
     "Free Shipping And Returns",
   ];
   useEffect(()=> {productId&& data?.map((item)=>{
-    return  productId===item?.id ? (setItem(item)):null
+    return  productId===item?.id && (setItem(item));
   })},[productId])
   const AddtoCart =()=>{
       dispatch(addItem(items))
       navigate('/cart')
 
   }
-  console.log("cart",cart)
-  console.log("><><><>>M",items)
+
    
   return (
     <div className="Productdetailpage">
@@ -172,7 +171,7 @@ const ProductDetailpage = () => {
               data.map((item, index) => {
                 const {  itemPrice,itemName } = item;
                 return index <6 ? (
-                  <CategoryCard itemname={itemName} price={itemPrice} image={womencat3} path={"/details"} />
+                  <CategoryCard itemname={itemName} price={itemPrice} image={womencat3} path={"/details"} products={item} indexs={index} />
                 ) : null;
               })}
         </div>

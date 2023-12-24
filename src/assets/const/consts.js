@@ -1,6 +1,6 @@
 import { profileIcon1, profileIcon2, profileIcon3 } from "../images/images";
 
-const size = ["xxs", "xl", "xs", "S", "M", "L", "XXL", "3XL", "4XL"];
+const size = ["XXS", "XL", "XS", "S", "M", "L", "XXL", "3XL", "4XL"];
 const colors = [
     "Blue",
     "Black",
@@ -199,7 +199,7 @@ const colors = [
   },{
     id: 3,
     placeholder: "Expiration date (MM/YY)",
-    type: "text",
+    type: "tel",
     Style: "type1",
   },{
     id: 4,

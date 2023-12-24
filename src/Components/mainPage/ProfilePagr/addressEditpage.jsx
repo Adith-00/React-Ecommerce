@@ -4,6 +4,8 @@ import InputBox from "../../input";
 import { feilds } from "../../../assets/const/consts";
 
 const AddressEdit = () => {
+
+
   return (
     <div className="addressedit">
       <h1 className="heading">My Info</h1>
@@ -11,47 +13,33 @@ const AddressEdit = () => {
         <h2 className="heading">Add Address</h2>
         <div className="inputfeild">
           {feilds?.map((item) => {
-            const { label, placeholder, type, Style, Options } = item;
-            return (
-              <div className="inputs">
-                <p>{label}</p>
-                {type !=="dropdown" ? (
-                  <InputBox
-                    placeholder={placeholder}
-                    type={type}
-                    style={Style}
-                  />
-                ) : (
-                  <select placeholder={placeholder} className={Style}>
-                    <option>--Select An Item --</option>
-                    {Options.map((item) => {
-                      return <option>{item}</option>;
-                    })}
-                  </select>
-                )}
-                {/* {() => {
-                  switch (type) {
-                    case "dropdown":
-                      return (
-                        <select placeholder={placeholder} className={Style}>
-                          <option>--Select An Item --</option>
-                          {Options.map((item) => (
-                            <option key={item}>{item}</option>
-                          ))}
-                        </select>
-                      );
-                    default:
-                      return (
-                        <InputBox
-                          placeholder={placeholder}
-                          type={type}
-                          style={Style}
-                        />
-                      );
-                  }
-                }} */}
-              </div>
-            );
+            const { label, placeholder, type, Style, Options,functions } = item;
+            switch (type) {
+              case "dropdown":
+                return (
+                  <div className="inputs">
+                    <p>{label}</p>
+                    <select placeholder={placeholder} className={Style}>
+                      <option>--Select An Item --</option>
+                      {Options.map((item) => (
+                        <option key={item}>{item}</option>
+                      ))}
+                    </select>
+                  </div>
+                );
+              default:
+                return (
+                  <div className="inputs">
+                    <p>{label}</p>
+                    <InputBox
+                      placeholder={placeholder}
+                      type={type}
+                      style={Style}
+                      onChange={functions}
+                    />
+                  </div>
+                );
+            }
           })}
         </div>
       </div>

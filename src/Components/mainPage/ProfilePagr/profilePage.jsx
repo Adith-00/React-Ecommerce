@@ -7,9 +7,18 @@ import AddressEdit from "./addressEditpage";
 import UserInfo from "./userInfo";
 import OderPage from "./Oderpage";
 import { ProfileNavigation } from "../../../assets/const/consts";
+import { useDispatch } from "react-redux";
+import { isNotAuthenticated } from "../../../redux/authSlice";
+import { useNavigate } from "react-router-dom";
 
 
 const Profile = ()=>{
+    const dispatch= useDispatch()
+    const navigate = useNavigate()
+    const Signout=()=>{
+        dispatch(isNotAuthenticated())
+        navigate('/')
+    }
     return(
         <div className="ProfileInfo">
             <div className="path wrapper">
@@ -31,15 +40,15 @@ const Profile = ()=>{
                                         <p><span><img src={logo} alt="icon" /></span>{text}</p>
                                     </div>
                         })}
-                        <div className="option">
+                        <div className="option" onClick={Signout}>
                             <i></i>
                             <p> <span><img src={profileIcon4} alt="icon" /></span>Signout</p>
                         </div>
                     </div>
                 </div>
                 <div className="content">
-                    <UserInfo/>
-                    {/* <AddressEdit/> */}
+                    {/* <UserInfo/> */}
+                    <AddressEdit/>
                    {/* <Wishlist/> */}
                    {/* <OderPage/> */}
                 </div>

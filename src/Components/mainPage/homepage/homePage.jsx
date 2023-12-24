@@ -62,28 +62,28 @@ const HomePage = () => {
           {data2 &&
             data2?.map((datas, index) => {
               const { item, about, offer } = datas;
-              return index < 3 ? (
+              return index < 3 && (
                 <SavingZonecard
                   image={image?.savingcard1}
                   itemName={item}
                   about={about}
                   offer={offer}
                 />
-              ) : null;
+              ) ;
             })}
         </div>
         <div className="bottomcard">
           {data2 &&
             data2?.map((datas, index) => {
               const { item, about, offer } = datas;
-              return index > 2 ? (
+              return index > 2 && (
                 <SavingZonecard
                   image={image?.savingcard4}
                   itemName={item}
                   about={about}
                   offer={offer}
                 />
-              ) : null;
+              ) ;
             })}
         </div>
       </div>
@@ -173,6 +173,8 @@ const HomePage = () => {
                     itemname={category}
                     image={image?.womencat1}
                     price={itemPrice}
+                    products={item}
+                    indexs={index}
                   />
                 )
               );

@@ -1,14 +1,27 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import FilterSection from "./filterSection";
 import "../../../assets/css/productPage/productPage.css";
 import CategoryCard from "../../categoryCard";
 import Heading from "../heading";
 import { DataContext } from "../../../router/router";
-import { filterIcon, womencat1 } from "../../../assets/images/images";
+import { EmptyCart, filterIcon, womencat1 } from "../../../assets/images/images";
+import { useDispatch, useSelector } from "react-redux";
+import {  setDefaultfilter } from "../../../redux/filterSlice";
+import MsgPage from "../MsgPage/msgContainer";
 
 const ProductListPage = () => {
   const { data } = useContext(DataContext);
-
+  const dispatch=useDispatch()
+  const filterminPrice = useSelector((state) => state.Filter. minPrice)
+  const filtermaxnPrice = useSelector((state) => state.Filter.  maxPrice)
+  const filtercolor = useSelector((state) => state.Filter.color)
+  const filtersize = useSelector((state) => state.Filter. size)
+  const filteredData = data.filter(item=> Number(item.itemPrice.replace("$", ""))>= filterminPrice && Number(item.itemPrice.replace("$", ""))<=filtermaxnPrice &&  (filtersize == "" || item.size.includes(filtersize))&& (filtercolor == "" || item.colors.includes(filtercolor)) )
+  console.log("filtered data",filtersize)
+  useEffect(()=>{
+     dispatch(setDefaultfilter())
+  },[])
+ 
   return (
     <div className="productListpage wrapper">
       <div className="product ">
@@ -23,13 +36,17 @@ const ProductListPage = () => {
             </div>
           </div>
           <div className="cards">
-            {data &&
-              data.map((item, index) => {
+            {filteredData.length>0 ?
+              filteredData.map((item, index) => {
                 const {  itemPrice,id,itemName } = item;
-                return index < 12 ? (
-                  <CategoryCard itemname={itemName} price={itemPrice} image={womencat1} path={"/productdetail"} id={id} />
-                ) : null;
-              })}
+                return (index < 20)&& (
+                  <CategoryCard itemname={itemName} price={itemPrice} image={womencat1} path={"/productdetail"} id={id} products={item} indexs={index}/>
+                ) 
+              }): <MsgPage
+              msgimg={EmptyCart}
+              msg={" No Items Found For Your Match :("}
+              buttontext={"Reset Filter ? "}
+            />}
           </div>
         </div>
       </div>
