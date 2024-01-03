@@ -39,6 +39,9 @@ head .searchBox {
   gap: 12px;
   background: #F6F6F6;
 }
+head .Menu {
+  display: none;
+}
 head .logos {
   display: flex;
   gap: 10px;
@@ -167,7 +170,8 @@ head .hamburger p:hover {
 @media screen and (max-width: 770px) {
   head {
     padding-left: 20px;
-    justify-content: unset;
+    justify-content: space-between;
+    padding-right: 15px;
     gap: 20px;
     position: relative;
   }
@@ -179,14 +183,17 @@ head .hamburger p:hover {
     display: none;
   }
   head .searchBox {
-    width: 200px;
+    width: 130px;
     height: 30px;
   }
   head .logos {
     display: none;
   }
+  head .Menu {
+    display: block;
+  }
   head .hamburger {
-    display: none;
+    display: flex;
     position: absolute;
     height: -moz-fit-content;
     height: fit-content;
@@ -196,7 +203,7 @@ head .hamburger p:hover {
     z-index: 1;
     border-radius: 8px;
     bottom: -252%;
-    left: 2%;
+    right: 2%;
     background-color: #F6F6F6;
     box-shadow: 0 2px 4px 1px gainsboro;
   }

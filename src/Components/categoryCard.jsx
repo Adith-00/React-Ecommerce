@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { DataContext } from "../router/router";
 import { useContext } from "react";
 import { useDispatch } from "react-redux";
-import { addWishlist, removeWishlit } from "../redux/wishlistSlice";
+import { addWishlist, removeWishlit } from "../redux/Slice/wishlistSlice";
 
 const CategoryCard=({image,itemname,price,path,id,products})=>{
     const{setProductId}=useContext(DataContext);

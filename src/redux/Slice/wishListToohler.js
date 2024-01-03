@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Heart } from "../assets/images/images";
+import { Heart } from "../../assets/images/images";
 
 const initialState={
     value:Heart

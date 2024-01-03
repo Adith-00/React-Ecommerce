@@ -1,10 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
-import authreducer from './authSlice'
-import cartreducer from "./cartSlice"
-import totalpricereducer from "./totalPriceSlice"
-import appdatareducer from "./appDataSlice"
-import wishListreducer from "./wishlistSlice"
-import filterreducer from "./filterSlice"
+import authreducer from './Slice/authSlice'
+import cartreducer from "./Slice/cartSlice"
+import totalpricereducer from "./Slice/totalPriceSlice"
+import appdatareducer from "./Slice/appDataSlice"
+import wishListreducer from "./Slice/wishlistSlice"
+import filterreducer from "./Slice/filterSlice"
+import Oderreducer from "./Slice/oderProductsSlice"
+import Addressreducer from "./Slice/AddressSlice"
+import AddressStorereducer from"./Slice/AddressHolder"
+import UserInforeducer from './Slice/UserInfoSlice'
 
 
 export const store = configureStore({
@@ -15,5 +19,9 @@ export const store = configureStore({
     AppData:appdatareducer,
     Wishlist: wishListreducer,
     Filter:filterreducer,
+    Oders:Oderreducer,
+    Address:Addressreducer,
+    AddressHolder:AddressStorereducer,
+    UserInfo:UserInforeducer,
   },
 })

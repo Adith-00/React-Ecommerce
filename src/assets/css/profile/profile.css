@@ -35,6 +35,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-width: 25%;
+  overflow-wrap: anywhere;
 }
 .ProfileInfo .informationdashbord .navigation .heading {
   display: flex;
@@ -191,6 +193,35 @@
   letter-spacing: 0.02em;
   text-align: left;
 }
+.ProfileInfo .informationdashbord .content .oderpage .msg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.ProfileInfo .informationdashbord .content .oderpage .msg h1 {
+  padding: 5px;
+  color: #151515;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+.ProfileInfo .informationdashbord .content .oderpage .msg button {
+  background-color: #8A33FD;
+  color: #F6F6F6;
+  width: 125px;
+  height: 48px;
+  padding: 12px, 40px, 12px, 40px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
 .ProfileInfo .informationdashbord .content .oderpage .OderLists {
   display: flex;
   flex-direction: column;
@@ -340,7 +371,7 @@
 .ProfileInfo .informationdashbord .content .userinfo .contactDetails {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
 .ProfileInfo .informationdashbord .content .userinfo .contactDetails .contactheading {
   color: #3C4242;
@@ -359,7 +390,7 @@
   color: #807D7E;
   font-size: 15px;
   font-weight: 600;
-  line-height: 22px;
+  line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
 }
@@ -374,7 +405,7 @@
   height: 50px;
   padding: 5px;
   color: #3C4242;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 22px;
   letter-spacing: 0em;
@@ -400,7 +431,15 @@
   font-weight: 600;
   line-height: 34px;
   letter-spacing: 0.02em;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .heading span {
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #151414;
+  cursor: pointer;
 }
 .ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address {
   display: flex;
@@ -460,6 +499,35 @@
   line-height: 19px;
   letter-spacing: 0em;
   cursor: pointer;
+}
+.ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .msg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .msg h1 {
+  padding: 5px;
+  color: #151515;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+.ProfileInfo .informationdashbord .content .userinfo .Shippingaddress .address .msg button {
+  background-color: #8A33FD;
+  color: #F6F6F6;
+  width: 125px;
+  height: 48px;
+  padding: 12px, 40px, 12px, 40px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 .ProfileInfo .informationdashbord .content .addressedit {
   display: flex;
@@ -582,9 +650,6 @@
     justify-content: unset;
     gap: 30px;
   }
-  .ProfileInfo .informationdashbord .navigation {
-    width: 30%;
-  }
   .ProfileInfo .informationdashbord .content .addressedit .editSection .inputfeild .inputs {
     width: 90%;
   }
@@ -621,7 +686,7 @@
     gap: 30px;
   }
   .ProfileInfo .informationdashbord .navigation {
-    width: 100%;
+    max-width: 100%;
   }
   .ProfileInfo .informationdashbord .navigation .navigationOption {
     flex-direction: row;

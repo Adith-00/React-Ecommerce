@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Button from "../../button";
 import { user, Heart, cart, Logo } from "../../../assets/images/images";
@@ -8,15 +8,16 @@ import "../../../assets/css/Mainheader/mainHeader.css";
 const MainHeader = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [menu,setMenu]=useState(false)
   const logoimage = [
-    { option: "Profile", image: user, path: "/profile" },
+    { option: "Profile", image: user, path: "/profile/userinfo" },
     { option: "Cart", image: cart, path: "/cart" },
-    { option: "Wishlist", image: Heart },
+    { option: "Wishlist", image: Heart,path:"/profile/wishlist" },
   ];
   const navlist = ["Shop", "Men", "Women", "Combos", "Joggers"];
-  const Navigatefunction = (path) => {
-    navigate(path);
-  };
+  // const Navigatefunction = (path) => {
+  //   navigate(path);
+  // };
   const logoNavigation = () => {
     navigate("/home");
   };
@@ -34,21 +35,22 @@ const MainHeader = () => {
         </ul>
       </div>
       <InputBox style={"searchBox"} placeholder="search" />
+      <i className="Menu" onClick={()=>{menu?setMenu(false):setMenu(true)}}><span class="material-symbols-outlined">menu</span></i>
       <div className="logos">
         {logoimage?.map((item) => {
           const { image, path } = item;
           return (
-            <i onClick={() => Navigatefunction(path)}>
+            <i onClick={() => navigate(path)}>
               <img src={image} alt="logo" />
             </i>
           );
         })}
       </div>
-      <div className="hamburger">
+      {menu&&<div className="hamburger">
         {logoimage?.map((item) => {
-          const { option, image } = item;
+          const { option, image,path } = item;
           return (
-            <p>
+            <p onClick={()=>{navigate(path)}}>
               <span>
                 <img src={image} alt="logo" />{" "}
               </span>
@@ -56,7 +58,8 @@ const MainHeader = () => {
             </p>
           );
         })}
-      </div>
+      </div>}
+      
     </head>
   ) : (
     <head className="head2">
@@ -68,8 +71,8 @@ const MainHeader = () => {
       </div>
       <div className="right">
         <p>English</p>
-        <Button style="active" buttontxt="Log-in" />
-        <Button style="in_active" buttontxt="Sign-up" />
+        <Button style="active" buttontxt="Log-in" btnfun={()=>{navigate("/")}}/>
+        <Button style="in_active" buttontxt="Sign-up" btnfun={()=>{navigate("/signup")}}/>
       </div>
     </head>
   );

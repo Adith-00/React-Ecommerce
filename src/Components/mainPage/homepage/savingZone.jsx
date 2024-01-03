@@ -1,23 +1,41 @@
-import React from "react";
+import React from "react";  
 import Heading from "../heading";
 import SavingZonecard from "./savingZonecard";
-import image1 from "../../../assets/images/savingZonecard1.png"
-import image2 from "../../../assets/images/savingzone card2.png"
-const SavingZoneholder =()=>{
+import { savingcard2, savingcard5 } from "../../../assets/images/images";
 
+const SavingZone =({data2})=>{
     return(
         <div className="savingzone wrapper">
-            <Heading headingTxt="Big Saving Zone"/>
-            <div className="topcard">
-                <SavingZonecard image={image1}/>
-                <SavingZonecard image={image1}/>
-                <SavingZonecard image={image1}/>
-            </div>
-            <div className="bottomcard">
-                <SavingZonecard image={image2}/>
-                <SavingZonecard image={image2}/>
-            </div>
+        <Heading headingTxt="Big Saving Zone" />
+        <div className="topcard">
+          {data2 &&
+            data2?.map((datas, index) => {
+              const { item, about, offer } = datas;
+              return index < 3 && (
+                <SavingZonecard
+                  image={savingcard2}
+                  itemName={item}
+                  about={about}
+                  offer={offer}
+                />
+              ) ;
+            })}
         </div>
+        <div className="bottomcard">
+          {data2 &&
+            data2?.map((datas, index) => {
+              const { item, about, offer } = datas;
+              return index > 2 && (
+                <SavingZonecard
+                  image={savingcard5}
+                  itemName={item}
+                  about={about}
+                  offer={offer}
+                />
+              ) ;
+            })}
+        </div>
+      </div>
     )
 }
-export default SavingZoneholder
+export default SavingZone

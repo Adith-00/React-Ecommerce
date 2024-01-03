@@ -1,6 +1,6 @@
 import React from "react";
 
-const InputBox = ({ type, placeholder, style, onChange, readOnly, value ,min,max}) => {
+const InputBox = ({ type, placeholder, style, onChange, readOnly, value ,min,max,checked}) => {
   return (
     <input
       type={type}
@@ -11,6 +11,7 @@ const InputBox = ({ type, placeholder, style, onChange, readOnly, value ,min,max
       value={value}
       min={min}
       max={max}
+      checked={checked}
     />
   );
 };

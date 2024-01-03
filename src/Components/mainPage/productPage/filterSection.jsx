@@ -4,8 +4,8 @@ import InputBox from "../../input";
 import { nxtarrow, filterIcon, slider } from "../../../assets/images/images";
 import { Items, Styles, colors, size } from "../../../assets/const/consts";
 import { useDispatch } from "react-redux";
-import { setColor, setMaxprice, setMinprice, setSize } from "../../../redux/filterSlice";
-const FilterSection = () => {
+import { setColor, setMaxprice, setMinprice, setSize,} from "../../../redux/Slice/filterSlice";
+const FilterSection = ({displzyOption }) => {
   const [min,setMin]=useState(50)
   const [max,setMax]=useState(100)
   const dispatch = useDispatch()
@@ -18,7 +18,7 @@ const FilterSection = () => {
     dispatch(setMaxprice(max))
   }
   return (
-    <div className="filtersection">
+    <div className="filtersection" style={{display:{displzyOption}}}>
       <div className="head">
         <div className="title">
           <h2>Filter</h2>

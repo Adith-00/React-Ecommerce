@@ -1,0 +1,151 @@
+.order {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.order .title {
+  display: flex;
+  gap: 5px;
+}
+.order .title h2 {
+  color: #3C4242;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.order .order-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  background-color: #F6F6F6;
+  align-items: center;
+  padding: 25px 20px;
+  border-radius: 8px;
+}
+.order .order-details .left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.order .order-details .left h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3C4242;
+}
+.order .order-details .left p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #807D7E;
+}
+.order .order-details .right {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #807D7E;
+}
+.order .order-details .right span {
+  color: #1e2323;
+}
+.order .status {
+  width: 50%;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order .status img {
+  width: 100%;
+  display: block;
+}
+.order .date {
+  display: flex;
+  gap: 25px;
+  background-color: #F6F6F6;
+  padding: 14px 16px;
+  border-radius: 4px;
+}
+.order .date p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #333535;
+}
+.order .order-image {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F6F6F6;
+  border-radius: 4px;
+  padding: 14px 18px;
+}
+.order .order-image .imgConatiner {
+  width: 50px;
+  height: 50px;
+}
+.order .order-image .imgConatiner img {
+  display: block;
+  width: 100%;
+}
+.order .order-image .text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.order .order-image .text h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #1e2323;
+}
+.order .order-image .text p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #1e2323;
+}
+.order .order-image .text p span {
+  color: #807D7E;
+  font-weight: 700;
+}
+.order .order-image .quantity {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #807D7E;
+}
+.order .order-image .price {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #1e2323;
+}
+.order .order-image i {
+  display: flex;
+}
+.order .order-image i img {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}/*# sourceMappingURL=oderdetails.css.map */

@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../button";
 import { cartimg, deleteIcon } from "../../../assets/images/images";
 import { useDispatch } from "react-redux";
-import { removeItem } from "../../../redux/cartSlice";
+import { removeItem } from "../../../redux/Slice/cartSlice";
 const CartItem = ({itemName,price,index}) => {
   const dispatch =useDispatch()
   const dltitem=()=>{

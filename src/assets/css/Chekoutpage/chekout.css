@@ -2,6 +2,9 @@
   display: flex;
   gap: 60px;
 }
+.chekoutPage .msgpage {
+  width: 100%;
+}
 .chekoutPage .chekoutSession {
   width: 80%;
   display: flex;

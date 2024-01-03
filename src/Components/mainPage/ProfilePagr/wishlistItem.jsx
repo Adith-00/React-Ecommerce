@@ -2,8 +2,8 @@ import React from "react";
 import { cartimg, closeCross } from "../../../assets/images/images";
 import Button from "../../button";
 import { useDispatch } from "react-redux";
-import { addItem } from "../../../redux/cartSlice";
-import { removeWishlit } from "../../../redux/wishlistSlice";
+import { addItem } from "../../../redux/Slice/cartSlice";
+import { removeWishlit } from "../../../redux/Slice/wishlistSlice";
 
 const WishListitem=({itemName,itemPrice,item,id})=>{
     const dispatch= useDispatch()

@@ -13,7 +13,8 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import ErrorDialog from "./errordailoge";
 import {  useDispatch } from 'react-redux'
-import { isAuthenticated,isNotAuthenticated } from "../../redux/authSlice";
+import { isAuthenticated,isNotAuthenticated } from "../../redux/Slice/authSlice";
+import { setAllInfo } from "../../redux/Slice/UserInfoSlice";
 
 const SignInpage = () => {
   const {
@@ -25,8 +26,6 @@ const SignInpage = () => {
     setMailerror,
     passerror,
     setPasserror,
-    // auths,
-    // setAuth
   } = useContext(DataContext);
   const dispatch = useDispatch()
   const [error, setError] = useState("");
@@ -35,6 +34,7 @@ const SignInpage = () => {
   const halndeUser = (e) => {
     setEmail(e.target.value);
     validation(setPasserror, pass,setMailerror, email); 
+    dispatch(setAllInfo({field:"E_mail",value:e.target.value}))
     console.log(">>>>>>>",email);
   };
 
@@ -42,6 +42,8 @@ const SignInpage = () => {
     setPass(e.target.value);
     validation(setPasserror, pass,setMailerror, email); 
     console.log(passerror);
+    dispatch(setAllInfo({field:"Password",value:e.target.value}))
+
   };
   const signIn = (e) => {
     e.preventDefault();

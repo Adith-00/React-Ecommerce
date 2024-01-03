@@ -10,6 +10,7 @@ import savingcard2 from "./Rectangle 75.png"
 import savingcard3 from "./Rectangle 76.png"
 import savingcard4 from "./Rectangle 77.png"
 import savingcard5 from "./Rectangle 78.png"
+import tracker from "./tracker.png"
 import poster1 from "./unsplash_bBiuSdck8tU.png"
 import poster2 from "./Rectangle 13.png"
 import mencat1 from "./Rectangle 20 (1).png"
@@ -24,6 +25,7 @@ import womencat1 from "./Rectangle 20 (3).png"
 import womencat2 from "./Rectangle 21 (2).png"
 import womencat3 from "./Rectangle 22 (4).png"
 import womencat4 from "./Rectangle 22 (5).png"
+import OderPlaced from "./SmVector.png"
 import Nike from "./Group 43.png"
 import HM from "./Group 44.png"
 import Levies from "./Group 45.png"
@@ -84,7 +86,9 @@ export {
     shipping,
     whitecart,
     LikedHeart,
+    OderPlaced,
     gpaylogo,
+    tracker,
     EmptyCart,
     visalogo,
     paypal,

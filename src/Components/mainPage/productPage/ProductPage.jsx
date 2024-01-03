@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import FilterSection from "./filterSection";
 import "../../../assets/css/productPage/productPage.css";
 import CategoryCard from "../../categoryCard";
@@ -6,7 +6,7 @@ import Heading from "../heading";
 import { DataContext } from "../../../router/router";
 import { EmptyCart, filterIcon, womencat1 } from "../../../assets/images/images";
 import { useDispatch, useSelector } from "react-redux";
-import {  setDefaultfilter } from "../../../redux/filterSlice";
+import {  setDefaultfilter } from "../../../redux/Slice/filterSlice";
 import MsgPage from "../MsgPage/msgContainer";
 
 const ProductListPage = () => {
@@ -21,18 +21,19 @@ const ProductListPage = () => {
   useEffect(()=>{
      dispatch(setDefaultfilter())
   },[])
- 
+ const [toogler,setToogler]= useState(true)
   return (
     <div className="productListpage wrapper">
       <div className="product ">
-        <FilterSection />
+        {toogler&& <FilterSection />}
+       
         <div className="productlist">
           <div className="heading">
             <h2 className="title">Women,s Clothing</h2>
             <div className="filter">
               <h2 className="cat1">New</h2>
               <h2 className="cat2">Recommended</h2>
-              <i className="filterIcon"><img src={filterIcon} alt="filter" /></i>
+              <i className="filterIcon" onClick={()=>{toogler?setToogler(false):setToogler(true)}}><img src={filterIcon} alt="filter" /></i>
             </div>
           </div>
           <div className="cards">

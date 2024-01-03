@@ -585,7 +585,7 @@
             display:flex;
             position:absolute;
             right: 4%;
-            top:2.7%;
+            top:2%;
             z-index: 1;
             background: #ffffff;
             align-self: flex-end;
@@ -643,7 +643,7 @@
       }
     .product{
         .filtersection{
-            top: 1%;
+            top: 2%;
         
         }
         .productlist{
@@ -733,7 +733,7 @@
           }
         .product{
             .filtersection{
-                top: 2%;
+                top: 4%;
                 .pricesection{
                     .pricefilter{
                         padding: 10px;
@@ -820,6 +820,7 @@
             .filtersection{
                 width: 70%;
                 height: 50%;
+                top: 12%;
             }
             .productlist{
                 .heading{

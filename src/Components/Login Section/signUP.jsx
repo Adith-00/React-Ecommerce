@@ -9,9 +9,10 @@ import { useNavigate } from "react-router-dom";
 import { DataContext } from "../../router/router";
 import { useContext, useState } from "react";
 import ErrorDialog from "./errordailoge";
+import { validation } from "./regular expression";
 
 const SignUppage = () => {
-  const { email, setEmail, pass, setPass } = useContext(DataContext);
+  const { email, setEmail, pass, setPass,emailerror, setMailerror,passerror,setPasserror } = useContext(DataContext);
   const [error, setError] = useState("");
   const [vibility,setVisibility] =useState("visibility_off");
 
@@ -19,10 +20,12 @@ const SignUppage = () => {
 
   const userHandler = (e) => {
     setEmail(e.target.value);
+    validation(setPasserror, pass,setMailerror, email); 
     console.log(email);
   };
   const passHandler = (e) => {
     setPass(e.target.value);
+    validation(setPasserror, pass,setMailerror, email); 
     console.log(pass);
   };
   const closeError = () => {
@@ -89,7 +92,7 @@ const SignUppage = () => {
                   style="username"
                   onChange={userHandler}
                 />
-                <p className="errorlabel">Error</p>
+                {email && <p className="errorlabel">{emailerror}</p>}
               </div>
 
               <div className="password-holder">
@@ -106,8 +109,8 @@ const SignUppage = () => {
                 />
                 <p className="errorlable"></p>
                 <p className="sublabel">
-                  Use 8 or more characters with a mix of letters, numbers &
-                  symbols
+                {pass? <p className="errorlabel">{passerror}</p>:<p className="slabel"> Use 8 or more characters with a mix of letters, numbers &
+                  symbols</p>}
                 </p>
               </div>
               <div className="checkboxes">

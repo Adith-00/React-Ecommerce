@@ -17,7 +17,7 @@ import {
   whitecart,
 } from "../../../assets/images/images";
 import { DataContext } from "../../../router/router";
-import { addItem } from "../../../redux/cartSlice";
+import { addItem } from "../../../redux/Slice/cartSlice";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 

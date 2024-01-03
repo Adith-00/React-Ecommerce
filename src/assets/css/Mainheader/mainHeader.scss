@@ -42,6 +42,9 @@ head{
         background: #F6F6F6;
 
     }
+    .Menu{
+        display: none;
+    }
     .logos{
         display: flex;
         gap: 10px;
@@ -193,7 +196,8 @@ head{
 @media screen and (max-width: 770px) {
     head{
         padding-left: 20px;
-        justify-content: unset;
+        justify-content: space-between;
+        padding-right: 15px;
         gap: 20px;
         position: relative;
         .logo{
@@ -205,14 +209,18 @@ head{
 
         }
         .searchBox{
-            width: 200px;
+            width: 130px;
             height: 30px;
         }
         .logos{
             display: none;
         }
+        .Menu{
+            display: block;
+           
+        }
         .hamburger{
-            display: none;
+            display: flex;
             position: absolute;
             height: fit-content;
             width: 22%;
@@ -221,7 +229,7 @@ head{
             z-index: 1;
             border-radius: 8px;
             bottom:-252%;
-            left: 2%;
+            right: 2%;
             background-color: #F6F6F6;
             box-shadow: 0 2px 4px 1px gainsboro;
 

@@ -1,7 +1,9 @@
 .chekoutPage {
     display: flex;
     gap: 60px;
-
+    .msgpage{
+        width: 100%;
+    }
     .chekoutSession {
         width: 80%;
         display: flex;
